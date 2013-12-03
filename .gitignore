@@ -1,0 +1,9 @@
+app/bootstrap.php.cache
+app/cache/*
+app/logs/*
+/vendor
+composer.phar
+composer.lock
+.elasticbeanstalk/
+*.DS_Store
+payments/*
