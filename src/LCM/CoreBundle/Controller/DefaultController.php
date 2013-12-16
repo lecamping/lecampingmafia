@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="lcm_index")
      * @Template()
      */
     public function indexAction()
@@ -24,5 +24,14 @@ class DefaultController extends Controller
     public function adminAction()
     {
         return array('name' => "admin");
+    }
+
+    /**
+     * @Route("/login_check")
+     * @Template()
+     */
+    public function checksAction()
+    {
+        return $this->redirect($this->generateUrl('lcm_index'));
     }
 }

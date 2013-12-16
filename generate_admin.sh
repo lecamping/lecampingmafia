@@ -12,10 +12,10 @@ rm -fr src/LCM/CoreBundle/Entity/*.php~
 for entity in `ls $dir/Entity/`
 do
 	entity=`echo $entity | sed "s:\.php::g"`
-	#rm -fr ${dst}Controller/${entity}Controller.php
-	#rm -fr ${dst}Resources/views/${entity}
+	rm -fr ${dir}Controller/${entity}Controller.php
+	rm -fr ${dir}Resources/views/${entity}
 	#rm -fr ${dst}Form/${entity}Type.php
-	#rm -fr ${dst}Tests/Controller/${entity}ControllerTest.php
+	rm -fr ${dir}Tests/Controller/${entity}ControllerTest.php
 	$php5 app/console doctrine:generate:crud --format=annotation --entity=LCMCoreBundle:${entity} --with-write -n 
 done
 

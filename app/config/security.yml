@@ -13,26 +13,36 @@ security:
                 users:
                     user:  { password: userpass, roles: [ 'ROLE_USER' ] }
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+        chain_provider:
+            chain:
+                providers: [fos_userbundle, my_fos_facebook_provider]
         fos_userbundle:
             id: fos_user.user_provider.username
+        my_fos_facebook_provider:
+            id: my.facebook.user
 
     firewalls:
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        main:
-            pattern: ^/
-            form_login:
-                provider: fos_userbundle
-                csrf_provider: form.csrf_provider
-            logout:       true
-            anonymous:    true
+        public:
+            pattern:   ^/.*
+            fos_facebook:
+                app_url: "http://apps.facebook.com/appName/"
+                server_url: "http://localhost/facebookApp/"
+                login_path: /login
+                check_path: /login_check
+                default_target_path: /
+                provider: my_fos_facebook_provider
+            anonymous: true
+            logout: true
         
 
     access_control:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin*, role: ROLE_ADMIN }
-        - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
+        - { path: ^/.*, role: [ROLE_FACEBOOK] }
         

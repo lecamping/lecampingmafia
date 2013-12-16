@@ -23,6 +23,9 @@
                 <th>Credentialsexpired</th>
                 <th>Credentialsexpireat</th>
                 <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Facebookid</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -42,10 +45,13 @@
                 <td>{% if entity.expiresAt %}{{ entity.expiresAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ entity.confirmationToken }}</td>
                 <td>{% if entity.passwordRequestedAt %}{{ entity.passwordRequestedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{#{ entity.roles }#}</td>
+                <td>{{ entity.roles }}</td>
                 <td>{{ entity.credentialsExpired }}</td>
                 <td>{% if entity.credentialsExpireAt %}{{ entity.credentialsExpireAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ entity.id }}</td>
+                <td>{{ entity.firstname }}</td>
+                <td>{{ entity.lastname }}</td>
+                <td>{{ entity.facebookId }}</td>
                 <td>
                 <ul>
                     <li>
