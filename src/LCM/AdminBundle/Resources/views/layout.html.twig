@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link href="{{ asset('bundles/lcmadmin/css/normalize.min.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('bundles/lcmadmin/css/admin.css') }}" rel="stylesheet" type="text/css" />
+        {% block javascript %}{% endblock %}
+        {% block styles %}{% endblock %}
+		<title>Admin {{ title }}</title>
+		<meta name="description" content="">
+	</head>
+	<body>
+	    <div id="username">{% if app.user.email is defined %}{{ app.user.email }}{% endif %}&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	    <div id="top">
+	        <a href="{{ path("_admin") }}">admin</a>
+	        {% if (title) %}
+	           {% if thref is defined %}:: <a href="{{ path(thref) }}">{{ title }}</a>{% else %}:: <a href="{{ path(title|lower) }}">{{ title }}</a>{% endif %}
+	           {% if (subtitle) %}
+	           <span>/ {{ subtitle }}</span>
+	           {% endif %}
+	        {% endif %}
+	    </div>
+	    <div id="menu">
+        </div>
+	    <div id="actions">
+            {% block actions %}{% endblock %}
+        </div>
+		<div id="content">
+        	{% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

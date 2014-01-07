@@ -1,1 +1,20 @@
-Hello {{ name }}!
+{% extends 'LCMAdminBundle::layout.html.twig' %}
+
+{% set title = '' %}
+{% set subtitle = '' %}
+
+{% block actions %}
+{% endblock %}
+
+{% block content %}
+
+<p>Hello {% if app.user.firstname is defined %}{{ app.user.firstname }}{% endif %}.</p>
+
+<p>RAW DB View (soyez sympa)</p>
+<ul>
+    {% for entity in entities %}
+    <li><a href="{{ path(entity|lower) }}">{{ entity }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,1 +1,65 @@
-Mafia. Na Na Na
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>le CampingMafia</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:200,400' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    body {
+        background-color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+    }
+    #width {
+        margin: auto;
+        max-width: 768px;
+    }
+    h1 {
+        border-bottom: 1px solid #EFF0EA;
+        color: #D76A5C;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 76px;
+        margin: 40px 0px 25px 0px;
+    }
+    h2 {
+        border-bottom: 1px solid #EFF0EA;
+        color: #D76A5C;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 30px;
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+    h3 { color: #D76A5C; font-weight: 200; margin: 5px 0px 5px 0px; }
+    h4 { color: #D76A5C; margin: 40px 0px 0px 0px; }
+
+    #content { margin: 0px 75px 0px 75px; }
+    #head { margin: 100px 0px 100px 0px; text-align: center; }
+    .startup { border: 1px #eee solid ; float: left; height: 80px; width: 180px; padding: 10px; margin: 10px 10px 0px 0px; }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="head">
+            <img src="{{ asset('bundles/lcmcore/img/logo.png') }}" alt="le CampingMafia" />
+        </div>
+        {% set season = 0 %}
+        {% for startup in startups %}
+        {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
+        <div class="startup">
+            <h3>{{ startup.name }}</h3>
+            <br />
+            <a href="{{ startup.website }}">{{ startup.website }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

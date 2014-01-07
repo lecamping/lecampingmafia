@@ -1,0 +1,94 @@
+body
+{
+	background-color: #FBFBFB;
+	margin: 0px;
+}
+
+h1 { font-size: 16px; }
+
+#username {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	font-size: 12px;
+	height: 40px;
+	line-height: 43px;
+}
+#username a { color: #000; font-style: italic; text-decoration: none; }
+
+#top
+{
+	background-color: #ff2244;
+	color: #fff;
+	font-size: 20px;
+	height: 40px;
+	line-height: 43px;
+	padding: 0px 0px 0px 30px;
+}
+#top a { color: #3d3d3d; text-decoration: none; }
+#top span { font-size: 16px; margin: 0px 0px 0px 10px; }
+
+#menu { background-color: #ff2244; height: 20px; padding: 0px 0px 0px 25px; }
+#menu a {
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0px 10px 0px 0px;
+	padding: 0px 5px 0px 5px;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #dd0022;
+	background-color: #fff;
+}
+
+#actions {
+	background-color: #3d3d3d;
+	height: 20px;
+	line-height: 20px;
+	font-size: 13px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 30px;
+}
+#actions a { color: #fff; text-decoration: none; }
+
+#actions form, #actions div { display:inline; }
+#actions form { float: right; margin: 0px 10px 0px 0px; }
+
+#content
+{
+	margin: 0px 5px 0px 5px;
+}
+
+.records_list {
+	border: 1px #ccc solid;
+	width: 100%;
+}
+
+.records_list th, .records_list td {
+	border: 1px #ccc solid;
+	font-size: 13px;
+}
+
+.records_list th {
+	font-size: 13px;
+}
+
+.records_list ul { margin: 0px; padding: 0px; list-style-type: none; }
+.records_list li { display: inline; margin: 0px; padding: 0px; width: 100px; list-style-type: none;  }
+
+
+
+/*** FORMS ***/
+label { clear: both; display: block; float: left; height: 20px; line-height: 20px; width: 120px; }
+input, select, option { margin: 0px 0px 10px 0px; }
+input { height: 20px; line-height: 20px; }
+textarea {
+	height: 180px;
+	margin: 0px 0px 10px 0px;
+}
+textarea, input { width: 500px; }
+

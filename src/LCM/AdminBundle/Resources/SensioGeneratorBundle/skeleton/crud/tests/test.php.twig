@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }}\Tests\Controller{{ entity_namespace ? '\\' ~ entity_namespace : '' }};
+namespace {{ namespace }}\Entity;
+
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
+class {{ entity_class }}ControllerTest extends WebTestCase
+{
+
+{%- include 'crud/tests/others/db_scenario.php' -%}
+    
+{%- include 'crud/tests/others/access_scenario.php' -%}
+
+{%- if 'new' in actions %}
+    {%- include 'crud/tests/others/full_scenario.php' -%}
+{%- else %}
+    {%- include 'crud/tests/others/short_scenario.php' -%}
+{%- endif %}
+    
+}

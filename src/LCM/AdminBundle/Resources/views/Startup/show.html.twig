@@ -1,0 +1,49 @@
+{% extends 'LCMAdminBundle::layout.html.twig' %}
+
+{% set title = 'Startup' %}
+{% set subtitle = 'details' %}
+
+{% block actions %}
+
+<form action="{{ path('startup_delete', { 'id': entity.id }) }}" method="post">{{ form_widget(delete_form) }}<button type="submit">Delete</button></form><a href="{{ path('startup') }}">Back to the list</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ path('startup_edit', { 'id': entity.id }) }}">Edit</a>
+
+{% endblock %}
+
+{% block content %}
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>{{ entity.name }}</td>
+        </tr>
+        <tr>
+            <th>Season</th>
+            <td>{{ entity.season }}</td>
+        </tr>
+        <tr>
+            <th>Pitch</th>
+            <td>{{ entity.pitch }}</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td>{{ entity.website }}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ entity.status }}</td>
+        </tr>
+        <tr>
+            <th>Socialnetworks</th>
+            <td>{{ entity.socialnetworks }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock %}

@@ -1,7 +1,7 @@
 lcm_admin:
     resource: "@LCMAdminBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 lcm_core:
     resource: "@LCMCoreBundle/Controller/"
@@ -13,25 +13,37 @@ fos_user_security:
 
 fos_user_profile:
     resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
-    prefix: /profile
+    prefix: /mafia/profile
 
 fos_user_register:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
-    prefix: /register
+    prefix: /mafia/register
 
 fos_user_resetting:
     resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
-    prefix: /resetting
+    prefix: /mafia/resetting
 
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix: /profile
+    prefix: /mafia/profile
+
+fos_user_security_login:
+    pattern:  /mafia/login
+    
+fos_user_security_logout:
+    pattern:  /mafia/logout
+
+lcm_core_default_checks:
+    pattern:  /mafia/login_check
+
+fos_user_security_check:
+    pattern:  /mafia/login_check
 
 _security_check:
-    pattern:  /loginfb_check
+    pattern:  /mafia/login_check
 
 _security_logout:
-    pattern:  /logout
+    pattern:  /mafia/logout
 
 fos_facebook_channel:
     resource: "@FOSFacebookBundle/Resources/config/routing.xml"

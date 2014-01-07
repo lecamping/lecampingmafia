@@ -1,0 +1,25 @@
+{% raw %}{% extends 'LCMAdminBundle::layout.html.twig' %}
+
+{% set title = '{% endraw %}{{ entity }}{% raw%}' %}
+{% set subtitle = '{% endraw %}creation{% raw%}' %}
+
+{% block actions %}
+{% endraw %}
+{% set hide_edit, hide_delete = true, true %}
+{% include 'crud/views/others/record_actions.html.twig' %}
+{% raw %}
+{% endblock %}
+
+{% block content %}
+{% endraw %}
+
+<form action="{{ "{{ path('"~ route_name_prefix ~"_create') }}" }}" method="post" {{ "{{ form_enctype(form) }}" }}>
+    {{ "{{ form_widget(form) }}" }}
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+{% raw %}
+{% endblock %}
+{% endraw %}

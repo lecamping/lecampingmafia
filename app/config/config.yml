@@ -68,7 +68,7 @@ swiftmailer:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: LCM\CoreBundle\Entity\User
+    user_class: LCM\AdminBundle\Entity\User
 
 fos_facebook:
     alias:  facebook

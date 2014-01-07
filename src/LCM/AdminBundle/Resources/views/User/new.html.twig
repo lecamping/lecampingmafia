@@ -1,0 +1,24 @@
+{% extends 'LCMAdminBundle::layout.html.twig' %}
+
+{% set title = 'User' %}
+{% set subtitle = 'creation' %}
+
+{% block actions %}
+
+<a href="{{ path('user') }}">Back to the list</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<form action="{{ path('user_create') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+
+{% endblock %}

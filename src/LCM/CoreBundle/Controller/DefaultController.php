@@ -14,16 +14,10 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return array('name' => "romain");
-    }
-
-    /**
-     * @Route("/admin")
-     * @Template()
-     */
-    public function adminAction()
-    {
-        return array('name' => "admin");
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery('SELECT s FROM LCMAdminBundle:Startup s ORDER BY s.season DESC, s.name');
+        $startups = $query->getResult();
+        return array('startups' => $startups);
     }
 
     /**
