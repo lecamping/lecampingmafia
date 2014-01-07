@@ -42,7 +42,8 @@
 
     #content { margin: 0px 75px 0px 75px; }
     #head { margin: 100px 0px 100px 0px; text-align: center; }
-    .startup { border: 1px #eee solid ; float: left; height: 80px; width: 180px; padding: 10px; margin: 10px 10px 0px 0px; }
+    .startup { border: 1px #eee solid ; float: left; min-height: 130px; width: 180px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
+    .startup .profile { margin: 10px 10px 10px 0px;}
 
     </style>
 </head>
@@ -58,6 +59,10 @@
             <h3>{{ startup.name }}</h3>
             <br />
             <a href="{{ startup.website }}">{{ startup.website }}</a>
+            <br />
+            {% for founder in startup.founders %}
+                <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+            {% endfor %}
         </div>
         {% endfor %}
     </div>
