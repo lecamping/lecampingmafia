@@ -18,7 +18,6 @@ class UserType extends AbstractType
             ->add('username')
             ->add('usernameCanonical')
             ->add('email')
-            ->add('salt')
             ->add('lastLogin')
             ->add('expiresAt')
             ->add('confirmationToken')
