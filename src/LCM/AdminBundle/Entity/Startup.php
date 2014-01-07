@@ -226,6 +226,8 @@ class Startup
     {
         $this->founders = new \Doctrine\Common\Collections\ArrayCollection();
     }
+
+    public function __toString() { return $this->getName(); }
     
     /**
      * Add founders
