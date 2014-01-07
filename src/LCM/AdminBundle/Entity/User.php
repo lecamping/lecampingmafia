@@ -93,6 +93,7 @@ class User extends BaseUser
         if (isset($fbdata['email'])) {
             $this->setEmail($fbdata['email']);
         }
+        $this->addRole('ROLE_FACEBOOK');
     }
 
     public function getExpiresAt() { return $this->expiresAt; }
