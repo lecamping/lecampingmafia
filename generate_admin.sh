@@ -13,7 +13,10 @@ do
 	entity=`echo $entity | sed "s:\.php::g"`
 	rm -fr ${dir}Controller/${entity}Controller.php
 	rm -fr ${dir}Resources/views/${entity}
-	rm -fr ${dir}Form/${entity}Type.php
+	if [ "$entity" != "User" ]
+	then
+		rm -fr ${dir}Form/${entity}Type.php
+	fi
 	rm -fr ${dir}Tests/Controller/${entity}ControllerTest.php
 	$php5 app/console doctrine:generate:crud --format=annotation --entity=LCMAdminBundle:${entity} --with-write -n
 	if [ "$entity" == "User" ]
