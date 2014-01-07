@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new LCM\AdminBundle\LCMAdminBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\FacebookBundle\FOSFacebookBundle(),
+            new LCM\MafiaBundle\LCMMafiaBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

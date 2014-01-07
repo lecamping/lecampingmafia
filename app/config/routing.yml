@@ -1,3 +1,8 @@
+lcm_mafia:
+    resource: "@LCMMafiaBundle/Controller/"
+    type:     annotation
+    prefix:   /mafia
+
 lcm_admin:
     resource: "@LCMAdminBundle/Controller/"
     type:     annotation
@@ -7,6 +12,12 @@ lcm_core:
     resource: "@LCMCoreBundle/Controller/"
     type:     annotation
     prefix:   /
+
+_security_check:
+    pattern:  /mafia/login_check
+
+_security_logout:
+    pattern:  /mafia/logout
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -39,11 +50,7 @@ lcm_core_default_checks:
 fos_user_security_check:
     pattern:  /mafia/login_check
 
-_security_check:
-    pattern:  /mafia/login_check
 
-_security_logout:
-    pattern:  /mafia/logout
 
 fos_facebook_channel:
     resource: "@FOSFacebookBundle/Resources/config/routing.xml"

@@ -28,4 +28,13 @@ class DefaultController extends Controller
     {
         return $this->redirect($this->generateUrl('lcm_index'));
     }
+
+    /**
+     * @Route("/login")
+     * @Template()
+     */
+    public function loginAction()
+    {
+        return $this->redirect($this->generateUrl('lcm_index'));
+    }
 }
