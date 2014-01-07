@@ -46,7 +46,7 @@
     #head { margin: 100px 0px 50px 0px; text-align: center; }
     .startup { border: 1px #eee solid ; float: left; min-height: 130px; width: 180px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
     .staff { padding: 20px 0px 20px 0px; }
-    .startup .profile { margin: 10px 5px 10px 0px;}
+    .startup .profile , .staff .profile { margin: 10px 5px 10px 0px;}
 
     </style>
 </head>
@@ -60,7 +60,6 @@
         {% if startup.status == 'c' %}
         <h2>{{ startup.name }}</h2>
         <div class="staff">
-                <br />
                 <a href="{{ startup.website }}">{{ startup.website }}</a>
                 <br />
                 {% for founder in startup.founders %}
