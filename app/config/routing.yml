@@ -14,10 +14,10 @@ lcm_core:
     prefix:   /
 
 _security_check:
-    pattern:  /login_check
+    pattern:  /mafia/login_check
 
 _security_logout:
-    pattern:  /logout
+    pattern:  /mafia/logout
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

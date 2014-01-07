@@ -23,8 +23,8 @@ security:
         public:
             pattern:   ^/mafia/*|^/admin/*
             fos_facebook:
-                login_path: /login
-                check_path: /admin/login_check
+                login_path: /mafia/login
+                check_path: /mafia/login_check
                 default_target_path: /
                 provider: my_fos_facebook_provider
             anonymous: true
