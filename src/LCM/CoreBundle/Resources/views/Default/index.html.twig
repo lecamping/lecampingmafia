@@ -23,6 +23,7 @@
     h1 {
         border-bottom: 1px solid #EFF0EA;
         color: #D76A5C;
+        clear: both;
         font-size: 36px;
         font-weight: normal;
         line-height: 76px;
@@ -30,20 +31,22 @@
     }
     h2 {
         border-bottom: 1px solid #EFF0EA;
+        clear: both;
         color: #D76A5C;
         font-size: 28px;
         font-weight: normal;
         line-height: 30px;
         margin: 0px;
-        padding: 0px 0px 5px 0px;
+        padding: 50px 0px 5px 0px;
     }
-    h3 { color: #D76A5C; font-weight: 200; margin: 5px 0px 5px 0px; }
+    h3 { clear: both; color: #D76A5C; font-weight: 200; margin: 5px 0px 5px 0px; }
     h4 { color: #D76A5C; margin: 40px 0px 0px 0px; }
 
     #content { margin: 0px 75px 0px 75px; }
-    #head { margin: 100px 0px 100px 0px; text-align: center; }
+    #head { margin: 100px 0px 50px 0px; text-align: center; }
     .startup { border: 1px #eee solid ; float: left; min-height: 130px; width: 180px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
-    .startup .profile { margin: 10px 10px 10px 0px;}
+    .staff { padding: 20px 0px 20px 0px; }
+    .startup .profile { margin: 10px 5px 10px 0px;}
 
     </style>
 </head>
@@ -54,16 +57,28 @@
         </div>
         {% set season = 0 %}
         {% for startup in startups %}
-        {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
-        <div class="startup">
-            <h3>{{ startup.name }}</h3>
-            <br />
-            <a href="{{ startup.website }}">{{ startup.website }}</a>
-            <br />
-            {% for founder in startup.founders %}
-                <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
-            {% endfor %}
+        {% if startup.status == 'c' %}
+        <h2>{{ startup.name }}</h2>
+        <div class="staff">
+                <br />
+                <a href="{{ startup.website }}">{{ startup.website }}</a>
+                <br />
+                {% for founder in startup.founders %}
+                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                {% endfor %}
         </div>
+        {% else %}
+            {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
+            <div class="startup">
+                <h3>{{ startup.name }}</h3>
+                <br />
+                <a href="{{ startup.website }}">{{ startup.website }}</a>
+                <br />
+                {% for founder in startup.founders %}
+                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                {% endfor %}
+            </div>
+        {% endif %}
         {% endfor %}
     </div>
 </body>
