@@ -15,6 +15,8 @@ class DefaultController extends Controller
     public function indexAction()
     {
     	echo "Hello";
+        if ($this->get('security.context')->isGranted('ROLE_ADMIN'))
+            return $this->redirect($this->generateUrl('_admin'));
         die();
     }
 
