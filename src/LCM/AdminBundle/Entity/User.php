@@ -52,6 +52,13 @@ class User extends BaseUser
      */
     private $startup;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="bro", type="boolean", nullable=true)
+     */
+    protected $bro;
+
 
     /**
      * Get id
@@ -172,6 +179,7 @@ class User extends BaseUser
      */
     public function __construct()
     {
+        parent::__construct();
         $this->startup = new \Doctrine\Common\Collections\ArrayCollection();
     }
     
@@ -206,5 +214,28 @@ class User extends BaseUser
     public function getStartup()
     {
         return $this->startup;
+    }
+
+    /**
+     * Set bro
+     *
+     * @param boolean $bro
+     * @return User
+     */
+    public function setBro($bro)
+    {
+        $this->bro = $bro;
+    
+        return $this;
+    }
+
+    /**
+     * Get bro
+     *
+     * @return boolean 
+     */
+    public function getBro()
+    {
+        return $this->bro;
     }
 }

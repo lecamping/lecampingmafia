@@ -32,6 +32,7 @@ class UserType extends AbstractType
             ->add('enabled', 'checkbox', array('required' => false))
             ->add('password', 'text', array('required' => false))
             ->add('locked', 'checkbox', array('required' => false))
+            ->add('bro', 'checkbox', array('required' => false))
             ->add('expired', 'checkbox', array('required' => false))
             ->add('credentialsExpired', 'checkbox', array('required' => false))
         ;
