@@ -91,7 +91,7 @@ class DefaultController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('_mafia'));
+        return $this->redirect($this->generateUrl('_mafia_my_profile'));
     }
 
     /**
@@ -131,7 +131,7 @@ class DefaultController extends Controller
             }
         }
 
-        return $this->redirect($this->generateUrl('_mafia'));
+        return $this->redirect($this->generateUrl('_mafia_my_profile'));
     }
 
     /**
