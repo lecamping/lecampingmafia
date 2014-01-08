@@ -58,7 +58,8 @@
         <div id="head">
             <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
         </div>
-        Hello {{ app.user.firstname }}.
+        <p>Hello {{ app.user.firstname }}.</p>
+        <p><a href="{{ path('_mafia_wall') }}">wall</a></p>
 
         {% if app.user.bro %}
         {% if bros|length %}<h2>Valider un Bro</h2>{% endif %}
