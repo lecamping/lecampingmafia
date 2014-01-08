@@ -1,0 +1,53 @@
+{% extends 'LCMMafiaBundle::layout.html.twig' %}
+
+{% block content %}
+        <p>Hello {{ app.user.firstname }}.</p>
+        <p><a href="{{ path('_mafia_wall') }}">wall</a></p>
+
+        {% if app.user.bro %}
+        {% if bros|length %}<h2>Valider un Bro</h2>{% endif %}
+        {% for bro in bros %}
+            <p><img class="profile" src="http://graph.facebook.com/{{ bro.facebookid }}/picture" alt="" /> {{ bro.firstname }} {{ bro.lastname }}. Make him a <a href="{{ path('_mafia_inbro', {'id': bro.id }) }}">bro</a></p>
+        {% endfor %}
+
+        <h2>Select Startup</h2>
+        <p>Select the startup in which one you are. If it do not exists, create it.</p>
+        <p>
+        <form action="{{ path('_mafia_updatefounder') }}" method="post" {{ form_enctype(selectstartup) }}>
+            {{ form_widget(selectstartup) }}
+            <p>
+                <button type="submit">Edit</button>
+            </p>
+        </form>
+        </p>
+
+        <h2>Create startup</h2>
+        <p>
+        <form action="{{ path('_mafia_create') }}" method="post" {{ form_enctype(createstartup) }}>
+            {{ form_widget(createstartup) }}
+            <p>
+                <button type="submit">Create</button>
+            </p>
+        </form>
+        </p>
+
+        {% if startupedit|length %}
+        <h2>Edit Startups</h2>
+            {% for k,start in startupedit %}
+            <h3>{{ startups[k].name }}</h3>
+            <form action="{{ path('_mafia_edit', {'id': startups[k].id }) }}" method="post" {{ form_enctype(start) }}>
+                {{ form_widget(start) }}
+                <p>
+                    <button type="submit">Edit</button>
+                </p>
+            </form>
+            {% endfor %}
+        {% endif %}
+
+        <br /><br /><br />
+        <i>OK c'est moche... ;)</i>
+
+        {% else %}
+        <p>"Ca vaut un out du camping ça !"</p>
+        {% endif %}
+{% endblock %}

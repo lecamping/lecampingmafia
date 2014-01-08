@@ -21,6 +21,18 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery('SELECT s FROM LCMAdminBundle:Startup s ORDER BY s.season DESC, s.name');
+        $startups = $query->getResult();
+        return array('startups' => $startups);
+    }
+
+    /**
+     * @Route("/my", name="_mafia_my_profile")
+     * @Template()
+     */
+    public function myprofileAction()
+    {
+        $em = $this->getDoctrine()->getManager();
         $query = $em->createQuery('SELECT u FROM LCMAdminBundle:User u WHERE u.bro IS NULL');
         $bros = $query->getResult();
 
@@ -39,7 +51,7 @@ class DefaultController extends Controller
         $entity = new Startup();
         $form   = $this->createForm(new StartupType(), $entity);
 
-    	return array('bros' => $bros, 'selectstartup' => $editForm->createView(), 'createstartup' => $form->createView(), 'startupedit' => $startupedit, 'startups' => $startups);
+        return array('bros' => $bros, 'selectstartup' => $editForm->createView(), 'createstartup' => $form->createView(), 'startupedit' => $startupedit, 'startups' => $startups);
     }
 
 

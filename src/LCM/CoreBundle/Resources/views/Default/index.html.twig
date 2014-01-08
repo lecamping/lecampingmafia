@@ -16,38 +16,18 @@
         margin: 0px;
         padding: 0px;
     }
-    #width {
-        margin: auto;
-        max-width: 768px;
-    }
-    h1 {
-        border-bottom: 1px solid #EFF0EA;
-        color: #D76A5C;
-        clear: both;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 76px;
-        margin: 40px 0px 25px 0px;
-    }
-    h2 {
-        border-bottom: 1px solid #EFF0EA;
-        clear: both;
-        color: #D76A5C;
-        font-size: 28px;
-        font-weight: normal;
-        line-height: 30px;
-        margin: 0px;
-        padding: 50px 0px 5px 0px;
-    }
-    h3 { clear: both; color: #D76A5C; font-weight: 200; margin: 5px 0px 5px 0px; }
-    h4 { color: #D76A5C; margin: 40px 0px 0px 0px; }
-
     #content { margin: 0px 75px 0px 75px; }
     #head { margin: 100px 0px 50px 0px; text-align: center; }
-    .startup { border: 1px #eee solid ; float: left; min-height: 151px; width: 210px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
-    .staff { padding: 20px 0px 20px 0px; }
-    .startup .profile , .staff .profile { margin: 10px 5px 10px 0px;}
 
+    table { width: 100%; }
+    tr { line-height: 40px; }
+    td, th { text-align: left; }
+    th { font-weight: 200; font-style: italic; }
+    .name { width: 175px; color: #777; }
+    .website { width: 250px; }
+    .status { width: 75px; text-align: center; }
+    .season { width: 75px; text-align: center; }
+    .center { text-align: center; }
     </style>
 </head>
 <body>
@@ -55,30 +35,24 @@
         <div id="head">
             <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
         </div>
-        {% set season = 0 %}
+        <table>
+            <tr>
+                <th>name</th>
+                <th>website</th>
+                <th class="center">status</th>
+                <th class="center">season</th>
+                <th>pitch</th>
+            </tr>
         {% for startup in startups %}
-        {% if startup.status == 'c' %}
-        <h2>{{ startup.name }}</h2>
-        <div class="staff">
-                <a href="{{ startup.website }}">{{ startup.website }}</a>
-                <br />
-                {% for founder in startup.founders %}
-                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
-                {% endfor %}
-        </div>
-        {% else %}
-            {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
-            <div class="startup">
-                <h3>{{ startup.name }}</h3>
-                <br />
-                <a href="{{ startup.website }}">{{ startup.website }}</a>
-                <br />
-                {% for founder in startup.founders %}
-                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
-                {% endfor %}
-            </div>
-        {% endif %}
+            <tr>
+                <td class="name">{{ startup.name }}</td>
+                <td class="website"><a href="{{ startup.website }}">{{ startup.website[7:] }}</a></td>
+                <td class="status">{% if startup.status == 'a' %}active{% elseif startup.status == 'd' %}dead{% elseif startup.status == 'e' %}exited{% else %}{% endif %}</td>
+                <td class="season"><span>{{ startup.season }}</span></td>
+                <td class="pitch">{{ startup.pitch }}</td>
+            </tr>
         {% endfor %}
+        </table>
     </div>
 </body>
 </html>

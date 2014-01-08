@@ -1,112 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>le CampingMafia</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:200,400' rel='stylesheet' type='text/css' />
-    <style type="text/css">
-    body {
-        background-color: #fff;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        margin: 0px;
-        padding: 0px;
-    }
-    #width {
-        margin: auto;
-        max-width: 768px;
-    }
-    h1 {
-        border-bottom: 1px solid #EFF0EA;
-        color: #D76A5C;
-        clear: both;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 76px;
-        margin: 40px 0px 25px 0px;
-    }
-    h2 {
-        border-bottom: 1px solid #EFF0EA;
-        clear: both;
-        color: #D76A5C;
-        font-size: 28px;
-        font-weight: normal;
-        line-height: 30px;
-        margin: 0px;
-        padding: 50px 0px 5px 0px;
-    }
-    h3 { clear: both; color: #D76A5C; font-weight: 200; margin: 5px 0px 5px 0px; }
-    h4 { color: #D76A5C; margin: 40px 0px 0px 0px; }
+{% extends 'LCMMafiaBundle::layout.html.twig' %}
 
-    #content { margin: 0px 75px 0px 75px; }
-    #head { margin: 100px 0px 50px 0px; text-align: center; }
-    .startup { border: 1px #eee solid ; float: left; min-height: 130px; width: 180px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
-    .staff { padding: 20px 0px 20px 0px; }
-    .startup .profile , .staff .profile { margin: 10px 5px 10px 0px;}
-    label { width: 200px; float: left; }
-    input { line-height: 20px; width: 500px; }
-    select { width: 506px; }
-    textarea { width: 500px; height: 250px; }
-    </style>
-</head>
-<body>
-    <div id="content">
-        <div id="head">
-            <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
+{% block content %}
+        {% set season = 0 %}
+        {% for startup in startups %}
+        {% if startup.status == 'c' %}
+        <h2>{{ startup.name }}</h2>
+        <div class="staff">
+                <a href="{{ startup.website }}">{{ startup.website }}</a>
+                <br />
+                {% for founder in startup.founders %}
+                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                {% endfor %}
         </div>
-        <p>Hello {{ app.user.firstname }}.</p>
-        <p><a href="{{ path('_mafia_wall') }}">wall</a></p>
-
-        {% if app.user.bro %}
-        {% if bros|length %}<h2>Valider un Bro</h2>{% endif %}
-        {% for bro in bros %}
-            <p><img class="profile" src="http://graph.facebook.com/{{ bro.facebookid }}/picture" alt="" /> {{ bro.firstname }} {{ bro.lastname }}. Make him a <a href="{{ path('_mafia_inbro', {'id': bro.id }) }}">bro</a></p>
-        {% endfor %}
-
-        <h2>Select Startup</h2>
-        <p>Select the startup in which one you are. If it do not exists, create it.</p>
-        <p>
-        <form action="{{ path('_mafia_updatefounder') }}" method="post" {{ form_enctype(selectstartup) }}>
-            {{ form_widget(selectstartup) }}
-            <p>
-                <button type="submit">Edit</button>
-            </p>
-        </form>
-        </p>
-
-        <h2>Create startup</h2>
-        <p>
-        <form action="{{ path('_mafia_create') }}" method="post" {{ form_enctype(createstartup) }}>
-            {{ form_widget(createstartup) }}
-            <p>
-                <button type="submit">Create</button>
-            </p>
-        </form>
-        </p>
-
-        {% if startupedit|length %}
-        <h2>Edit Startups</h2>
-            {% for k,start in startupedit %}
-            <h3>{{ startups[k].name }}</h3>
-            <form action="{{ path('_mafia_edit', {'id': startups[k].id }) }}" method="post" {{ form_enctype(start) }}>
-                {{ form_widget(start) }}
-                <p>
-                    <button type="submit">Edit</button>
-                </p>
-            </form>
-            {% endfor %}
-        {% endif %}
-
-        <br /><br /><br />
-        <i>OK c'est moche... ;)</i>
-
         {% else %}
-        <p>"Ca vaut un out du camping ça !"</p>
+            {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
+            <div class="startup">
+                <h3>{{ startup.name }}</h3>
+                <br />
+                <a href="{{ startup.website }}">{{ startup.website }}</a>
+                <br />
+                {% for founder in startup.founders %}
+                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                {% endfor %}
+            </div>
         {% endif %}
-    </div>
-</body>
-</html>
+        {% endfor %}
+{% endblock %}
