@@ -30,67 +30,119 @@
         margin-right: 20px;
     }
 
-    table th {
+    table.startups {
+        display: block;
+        width: 94%;
+        margin: 0px auto 40px auto;
+    }
+
+    table.startups th {
         text-align: left;
         padding: 5px 10px 10px 10px;
     }
 
-    table td {
+    table.startups td {
         padding: 10px 10px 0px 10px;
     }
 
     /*  TAKU STYLE */
-    .favicon {
+    table.startups .favicon {
         vertical-align: middle
     }
 
-    .favicon img {
+    table.startups .favicon img {
         width: 20px;
         height: 20px;
     }
 
-    .website a {
+    table.startups .website a {
         text-decoration: none;
         color: #888;
         font-style: italic;
     }
 
-    .status {
+    table.startups .status {
         text-align: center;
     }
 
-    .status img {
+    table.startups .status img {
         width: 20px;
     }
 
-    .season {
+    table.startups .season {
         text-align: center
     }
 
-    .season span {
-        line-height: 20px;
+    table.startups .season span {
+        background: url({{ asset('bundles/lcmcore/img/icon-border.png') }}) no-repeat;
+        background-size: cover;
+        height: 20px;
+        line-height: 19px;
         width: 20px;
         color: #888;
-        border: 1px solid #888;
         display: inline-block;
-        border-radius: 10px;
-        height: 20px;
+        font-size: 12px;
+        position:relative;
+        top: -1px;
     }
 
-    .connect img {
+    table.startups .connect img {
         width: 20px;
         border: 0px;
     }
 
-    .connect a {
+    table.startups .connect a {
         text-decoration: none;
         color: #888;
         margin-right: 10px
     }
 
-    .pitch {
+    table.startups .pitch {
         font-size: 12px;
     }
+
+    .footer {
+        background: #ccc;
+    }
+
+    .footer {
+        background: #ccc;
+        display: block;
+        width: 100%;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .footer table {
+        display: block;
+        width: 94%;
+        margin: auto;
+    }
+
+    .footer td {
+        text-align: center;
+    }
+
+    .footer td.small-left {
+        text-align: left;
+    }
+
+    .footer td.small-right {
+        text-align: right;
+    }
+
+    .footer td.small {
+        width: 25%;
+    }
+
+    .footer td img {
+        width: 300px;
+    }
+
+    .footer td.small-left a {
+        color: #ddd;
+    }
+
     </style>
 </head>
 <body>
@@ -100,7 +152,7 @@
             Le Camping Mafia
         </h1>
 
-        <table>
+        <table class="startups">
             <tr>
                 <th></th>
                 <th>name</th>
@@ -173,6 +225,28 @@
             </tr>
         {% endfor %}
         </table>
+    </div>
+
+    <div class="footer">
+    <table>
+        <tr>
+            <td class="small small-left">
+                Startups proudly accelerated at Le Camping, Paris.<br /><br />
+
+                <a href="http://accelerate.numaparis.com">
+                    accelerate.numaparis.com
+                </a>
+            </td>
+            <td>
+                <img src="{{asset('bundles/lcmcore/img/logo-camping.png')}}" />
+            </td>
+            <td class="small small-right">
+                &copy; Le Camping Mafia, 2014<br /><br />
+
+                last update, january 2014
+            </td>
+        </tr>
+    </table>
     </div>
 </body>
 </html>
