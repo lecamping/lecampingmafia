@@ -9,48 +9,167 @@
     <title>le CampingMafia</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:200,400' rel='stylesheet' type='text/css' />
     <style type="text/css">
+
     body {
         background-color: #fff;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         margin: 0px;
         padding: 0px;
+        font-size: 14px;
     }
-    #content { margin: 0px 75px 0px 75px; }
-    #head { margin: 100px 0px 50px 0px; text-align: center; }
 
-    table { width: 100%; }
-    tr { line-height: 80px; }
-    td, th { text-align: left; }
-    th { font-weight: 200; font-style: italic; }
-    .name { width: 200px; color: #777; overflow: hidden; height: 80px; }
-    .website { width: 250px; }
-    .status { width: 75px; text-align: center; }
-    .season { width: 75px; text-align: center; }
-    .center { text-align: center; }
-    .pitch { line-height: 20px; }
+    h1 {
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    h1 img {
+        position: relative;
+        bottom: -20px;
+        margin-right: 20px;
+    }
+
+    table th {
+        text-align: left;
+        padding: 5px 10px 10px 10px;
+    }
+
+    table td {
+        padding: 10px 10px 0px 10px;
+    }
+
+    /*  TAKU STYLE */
+    .favicon {
+        vertical-align: middle
+    }
+
+    .favicon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .website a {
+        text-decoration: none;
+        color: #888;
+        font-style: italic;
+    }
+
+    .status {
+        text-align: center;
+    }
+
+    .status img {
+        width: 20px;
+    }
+
+    .season {
+        text-align: center
+    }
+
+    .season span {
+        line-height: 20px;
+        width: 20px;
+        color: #888;
+        border: 1px solid #888;
+        display: inline-block;
+        border-radius: 10px;
+        height: 20px;
+    }
+
+    .connect img {
+        width: 20px;
+        border: 0px;
+    }
+
+    .connect a {
+        text-decoration: none;
+        color: #888;
+        margin-right: 10px
+    }
+
+    .pitch {
+        font-size: 12px;
+    }
     </style>
 </head>
 <body>
     <div id="content">
-        <div id="head">
+        <h1 id="head">
             <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
-        </div>
+            Le Camping Mafia
+        </h1>
+
         <table>
             <tr>
+                <th></th>
                 <th>name</th>
-                <th>website</th>
+                <th>URL</th>
                 <th class="center">status</th>
                 <th class="center">season</th>
-                <th>pitch</th>
+                <th class="center">pitch</th>
+                <th class="center">connect</th>
             </tr>
         {% for startup in startups %}
             <tr>
-                <td class="name">{{ startup.name }}</td>
-                <td class="website"><a href="{{ startup.website }}">{{ startup.website[7:] }}</a></td>
-                <td class="status">{% if startup.status == 'a' %}active{% elseif startup.status == 'd' %}dead{% elseif startup.status == 'e' %}exited{% else %}{% endif %}</td>
-                <td class="season"><span>{{ startup.season }}</span></td>
-                <td class="pitch">{{ startup.pitch }}</td>
+                <td class="favicon">
+                    {% if startup.hasFavicon %}
+                        <img src="{{ startup.faviconSrc }}" />
+                    {% endif %}
+                </td>
+                <td class="name">
+                    {{ startup.name }}
+                </td>
+                <td class="website">
+                    <a href="{{ startup.website }}">{{ startup.website[7:] }}</a>
+                </td>
+                <td class="status">
+                    {% if startup.status == 'a' %}
+                        <img src="{{asset('bundles/lcmcore/img/icon-active.png')}}" />
+                    {% elseif startup.status == 'd' %}
+                        <img src="{{asset('bundles/lcmcore/img/icon-dead.png')}}" />
+                    {% elseif startup.status == 'e' %}
+                        <img src="{{asset('bundles/lcmcore/img/icon-exited.png')}}" />
+                    {% else %}
+                    {% endif %}
+                </td>
+                <td class="season">
+                    <span>{{ startup.season }}</span>
+                </td>
+                <td class="pitch">
+                    {{ startup.pitch }}
+                </td>
+                <td class="connect">
+                    {% if startup.mail|length > 0 %}
+                    <a href="mailto:{{ startup.mail }}">
+                        <img src="{{asset('bundles/lcmcore/img/icon-mail.png')}}" />
+                    </a>
+                    {% endif %}
+
+                    {% if startup.facebookUrl|length > 0 %}
+                    <a href="{{ startup.facebookUrl }}">
+                        <img src="{{asset('bundles/lcmcore/img/icon-facebook.png')}}" />
+                    </a>
+                    {% endif %}
+
+                    {% if startup.twitterUrl|length > 0 %}
+                    <a href="{{ startup.twitterUrl }}">
+                        <img src="{{asset('bundles/lcmcore/img/icon-twitter.png')}}" />
+                    </a>
+                    {% endif %}
+
+                    {% if startup.angelistUrl|length > 0 %}
+                    <a href="{{ startup.angelistUrl }}">
+                        <img src="{{asset('bundles/lcmcore/img/icon-angelist.png')}}" />
+                    </a>
+                    {% endif %}
+
+                    {% if startup.linkedinUrl|length > 0 %}
+                    <a href="{{ startup.linkedinUrl }}">
+                        <img src="{{asset('bundles/lcmcore/img/icon-linkedin.png')}}" />
+                    </a>
+                    {% endif %}
+                </td>
             </tr>
         {% endfor %}
         </table>

@@ -197,6 +197,74 @@ class Startup
         return $this->status;
     }
 
+
+    public function hasFavicon()
+    {
+        if(!strlen($this->getWebsite())) {
+            return false;
+        }
+
+        $filename = $this->getFaviconSrc();
+
+        $curl = curl_init($filename);
+        curl_setopt($curl, CURLOPT_NOBODY, true);
+        
+        $result = curl_exec($curl);
+        
+        $ret = false;
+
+        //
+        if ($result !== false) {
+            $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            if ($statusCode == 200) {
+                $ret = true;   
+            }
+        }
+        curl_close($curl);
+        return $ret;
+    }
+
+    public function getFacebookUrl()
+    {
+        $t = json_decode($this->getSocialnetworks(), true);
+        return isset($t['facebook']) ? $t['facebook'] : '';
+    }
+
+    public function getTwitterUrl()
+    {
+        $t = json_decode($this->getSocialnetworks(), true);
+        return isset($t['twitter']) ? $t['twitter'] : '';
+    }
+
+    public function getAngelistUrl()
+    {
+        $t = json_decode($this->getSocialnetworks(), true);
+        return isset($t['angelist']) ? $t['angelist'] : '';
+    }
+
+    public function getLinkedInUrl()
+    {
+        $t = json_decode($this->getSocialnetworks(), true);
+        return isset($t['linkedin']) ? $t['linkedin'] : '';
+    }
+
+    public function getMail()
+    {
+        $t = json_decode($this->getSocialnetworks(), true);
+        return isset($t['mail']) ? $t['mail'] : '';
+    }
+
+    /**
+     * Set faviconSrc
+     *
+     * @param string $faviconSrc
+     * @return Startup
+     */
+    public function getFaviconSrc()
+    {
+        return $this->getWebsite().'/favicon.ico';
+    }
+
     /**
      * Set socialnetworks
      *

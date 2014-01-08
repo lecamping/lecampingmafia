@@ -77,6 +77,8 @@ class User extends BaseUser
         $roles = parent::getRoles();
         if($this->getEmail() == "cochet@gmail.com")
             $roles[] = 'ROLE_ADMIN';
+        if($this->getEmail() == "nicolas@znapp.it")
+            $roles[] = 'ROLE_ADMIN';
         return $roles;
     }
 
