@@ -68,21 +68,27 @@
     <div id="content">
         <div id="head">
             <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
+            {% if app.user.bro %}
             <p>
-                <a href="{{ path('_mafia') }}">Grid</a>
+                <a href="{{ path('_mafia_my_profile') }}">My Startup</a>
                 -
-                <a href="{{ path('_mafia_my_profile') }}">Edit</a>
+                <a href="{{ path('_mafia') }}">Grid</a>
                 -
                 <a href="{{ path('_mafia_wall') }}">Wall</a>
             </p>
+            {% else %}
+            <p>Demandez à un bro de vous valider. Et revenez.</p>
+            {% endif %}
         </div>
 
+        {% if app.user.bro %}
         {% block content %}{% endblock %}
+        {% endif %}
 
         <p class="clear">&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p><i>made quickly</i></p>
+        <p>&nbsp;</p>
         <p>&nbsp;</p>
         
     </div>

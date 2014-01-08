@@ -2,16 +2,13 @@
 
 {% block content %}
         <p>Hello {{ app.user.firstname }}.</p>
-        <p><a href="{{ path('_mafia_wall') }}">wall</a></p>
 
-        {% if app.user.bro %}
-        {% if bros|length %}<h2>Valider un Bro</h2>{% endif %}
+        {% if bros|length %}<h2>Valider les Bro</h2>{% endif %}
         {% for bro in bros %}
             <p><img class="profile" src="http://graph.facebook.com/{{ bro.facebookid }}/picture" alt="" /> {{ bro.firstname }} {{ bro.lastname }}. Make him a <a href="{{ path('_mafia_inbro', {'id': bro.id }) }}">bro</a></p>
         {% endfor %}
 
-        <h2>Select Startup</h2>
-        <p>Select the startup in which one you are. If it do not exists, create it.</p>
+        <h2>Select your startup</h2>
         <p>
         <form action="{{ path('_mafia_updatefounder') }}" method="post" {{ form_enctype(selectstartup) }}>
             {{ form_widget(selectstartup) }}
@@ -33,7 +30,7 @@
         
 
         {% if startupedit|length %}
-        <h2>Edit Startups</h2>
+        <h2>Edit your startup</h2>
             {% for k,start in startupedit %}
             <h3>{{ startups[k].name }}</h3>
             <form action="{{ path('_mafia_edit', {'id': startups[k].id }) }}" method="post" {{ form_enctype(start) }}>
@@ -46,15 +43,17 @@
         {% endif %}
 
 
-        <h3>Exemple pour social network</h3>
+        <h2>Tutoriel</h2>
+        <p>Ok, le site est développé un peu rapidement. Si vous voulez changer quelque chose, on vous donne accès aux sources.</p>
+        <p></p>
+        <h3>SocialNetworks</h3>
+        <p>Voici comment mettre vos liens. Ok c'est pas ouf, mais tu as un bien un CTO qui va pouvoir faire ça ;)</p>
         <p>{ "facebook":"http://facebook.com/smiirl", "twitter":"http://www.twitter.com/smiirl", "linkedin":"http://www.linkedin.com/smiirl", "angelist":"http://www.angelist.co/smiirl", "mail":"r2d2@smiirl.com" }</p>
-        <br />
-        </p>
+        <h3>Website</h3>
+        <p>Merci de bien mettre http:// devant votre URL sinon le lien ne fonctionne pas. (oui c'est débile)</p>
+        <h3>Pitch</h3>
+        <p>Le pitch en 140 caractères, on adore.</p>
 
         <br /><br /><br />
         <i>OK c'est moche... ;)</i>
-
-        {% else %}
-        <p>Demandez à un bro de vous valider. Et revenez dans un instant.</p>
-        {% endif %}
 {% endblock %}

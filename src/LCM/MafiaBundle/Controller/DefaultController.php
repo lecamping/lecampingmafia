@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="_mafia")
+     * @Route("/grid", name="_mafia")
      * @Template()
      */
     public function indexAction()
@@ -23,11 +23,14 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $query = $em->createQuery('SELECT s FROM LCMAdminBundle:Startup s ORDER BY s.season DESC, s.name');
         $startups = $query->getResult();
-        return array('startups' => $startups);
+
+        $query = $em->createQuery('SELECT s FROM LCMAdminBundle:User s WHERE s.bro IS NOT NULL ORDER BY s.firstname');
+        $bros = $query->getResult();
+        return array('startups' => $startups, 'bros' => $bros);
     }
 
     /**
-     * @Route("/my", name="_mafia_my_profile")
+     * @Route("/", name="_mafia_my_profile")
      * @Template()
      */
     public function myprofileAction()

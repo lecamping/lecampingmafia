@@ -1,7 +1,6 @@
 {% extends 'LCMMafiaBundle::layout.html.twig' %}
 
 {% block content %}
-        
         {% set season = 0 %}
         {% for startup in startups %}
         {% if startup.status == 'c' %}
@@ -10,7 +9,7 @@
                 <a href="{{ startup.website }}">{{ startup.website }}</a>
                 <br />
                 {% for founder in startup.founders %}
-                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                    <a href="http://facebook.com/{{ founder.facebookid }}" target="_blank"><img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" /></a>
                 {% endfor %}
         </div>
         {% else %}
@@ -21,9 +20,17 @@
                 <a href="{{ startup.website }}">{{ startup.website }}</a>
                 <br />
                 {% for founder in startup.founders %}
-                    <img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" />
+                    <a href="http://facebook.com/{{ founder.facebookid }}" target="_blank"><img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" /></a>
                 {% endfor %}
             </div>
+        {% endif %}
+        {% endfor %}
+
+        {% set titre = false %}
+        {% for founder in bros %}
+        {% if founder.startup|length == 0 %}
+            {% if titre == false %}<h2>Pas de startup ?</h2>{% set titre = true %}{% endif %}
+            <a href="http://facebook.com/{{ founder.facebookid }}" target="_blank"><img class="profile" src="http://graph.facebook.com/{{ founder.facebookid }}/picture" alt="" /></a>
         {% endif %}
         {% endfor %}
 {% endblock %}
