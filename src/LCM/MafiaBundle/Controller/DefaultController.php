@@ -27,6 +27,7 @@ class DefaultController extends Controller
 
         $startupsedit = array();
         $startups = array();
+        $startups = array();
         foreach($user->getStartup() as $k => $v)
         {
             $startups[] = $v;

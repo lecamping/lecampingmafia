@@ -47,7 +47,10 @@
     .startup { border: 1px #eee solid ; float: left; min-height: 130px; width: 180px; padding: 10px 10px 0px 10px; margin: 10px 10px 0px 0px; }
     .staff { padding: 20px 0px 20px 0px; }
     .startup .profile , .staff .profile { margin: 10px 5px 10px 0px;}
-
+    label { width: 200px; float: left; }
+    input { line-height: 20px; width: 500px; }
+    select { width: 506px; }
+    textarea { width: 500px; height: 250px; }
     </style>
 </head>
 <body>
@@ -64,6 +67,7 @@
         {% endfor %}
 
         <h2>Select Startup</h2>
+        <p>Select the startup in which one you are. If it do not exists, create it.</p>
         <p>
         <form action="{{ path('_mafia_updatefounder') }}" method="post" {{ form_enctype(selectstartup) }}>
             {{ form_widget(selectstartup) }}
@@ -97,7 +101,7 @@
         {% endif %}
 
         <br /><br /><br />
-
+        <i>OK c'est moche... ;)</i>
 
         {% else %}
         <p>"Ca vaut un out du camping ça !"</p>
