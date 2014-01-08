@@ -13,7 +13,7 @@ do
 	entity=`echo $entity | sed "s:\.php::g"`
 	rm -fr ${dir}Controller/${entity}Controller.php
 	rm -fr ${dir}Resources/views/${entity}
-	if [ "$entity" != "User" ]
+	if [ "$entity" != "User" ] && [ "$entity" != "Startup" ]
 	then
 		rm -fr ${dir}Form/${entity}Type.php
 	fi
