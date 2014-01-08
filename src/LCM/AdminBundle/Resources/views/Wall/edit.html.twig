@@ -1,0 +1,24 @@
+{% extends 'LCMAdminBundle::layout.html.twig' %}
+
+{% set title = 'Wall' %}
+{% set subtitle = 'edit' %}
+
+{% block actions %}
+
+<form action="{{ path('wall_delete', { 'id': entity.id }) }}" method="post">{{ form_widget(delete_form) }}<button type="submit">Delete</button></form><a href="{{ path('wall') }}">Back to the list</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<form action="{{ path('wall_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+    {{ form_widget(edit_form) }}
+    <p>
+        <button type="submit">Edit</button>
+    </p>
+</form>
+
+
+{% endblock %}

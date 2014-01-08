@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>le CampingMafia</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:200,400' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    body {
+        background-color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+    }
+    #content { margin: 0px auto 0px auto; width: 768px; }
+    #head { margin: 100px 0px 50px 0px; text-align: center; }
+    p { margin: 5px 0px 0px 0px; padding: 0px; line-height: 25px; clear: both; }
+    p span { float: left; width: 150px;}
+    p span img { float: left; height: 25px; margin: 0px 5px 0px 0px;}
+    label { display: none; }
+    input { width: 768px; line-height: 20px; height: 20px; border: 1px solid #eee; }
+    button { line-height: 20px; border: 1px solid #fff;  background-color: #fff; width: 772px; margin: 0px; padding: 0px;  color: #aaa; }
+    form { text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="head">
+            <img src="{{ asset('bundles/lcmcore/img/campingmafia.png') }}" alt="le CampingMafia" />
+        </div>
+        
+        {% if app.user.bro %}
+
+        <form action="{{ path('_mafia_wall_new') }}" method="post" {{ form_enctype(newwall) }}>
+            {#{ form_widget(newwall) }#}
+            <input id="lcm_mafiabundle_wall_said" name="lcm_mafiabundle_wall[said]" required="required" />
+            {{ form_widget(newwall._token) }}
+            <button type="submit">Send</button>
+        </form>
+
+        {% for m in msg %}
+            <p><span><img class="profile" src="http://graph.facebook.com/{{ m.user.facebookid }}/picture" alt="" /> {{ m.user.firstname }} : </span> {{ m.said }}</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>
