@@ -1,6 +1,7 @@
 {% extends 'LCMMafiaBundle::layout.html.twig' %}
 
 {% block content %}
+        
         {% set season = 0 %}
         {% for startup in startups %}
         {% if startup.status == 'c' %}
