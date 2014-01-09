@@ -169,9 +169,10 @@
         {% for startup in startups %}
             <tr>
                 <td class="favicon">
-                    {% if startup.hasFavicon %}
+                    {# if startup.hasFavicon %}
                         <img src="{{ startup.faviconSrc }}" />
-                    {% endif %}
+                    {% endif #}
+                    <img src="{{ startup.website }}/favicon.ico" onerror='this.style.display = "none"' alt="" />
                 </td>
                 <td class="name">
                     {{ startup.name }}
