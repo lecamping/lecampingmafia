@@ -75,7 +75,7 @@ fos_facebook:
     app_id: %fbapp%
     secret: %fbsecret%
     cookie: true
-    permissions: [email, user_birthday, user_location]
+    permissions: [email]
 
 services:
     my.facebook.user:

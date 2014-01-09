@@ -12,7 +12,7 @@
         </form>
 
         {% for m in msg %}
-            <p><span><img class="profile" src="http://graph.facebook.com/{{ m.user.facebookid }}/picture" alt="" /> {{ m.user.firstname }} : </span> {{ m.said }}</p>
+            <p><span><a href="http://facebook.com/{{ m.user.facebookid }}" target="_blank"><img class="profile" src="http://graph.facebook.com/{{ m.user.facebookid }}/picture" alt="" /></a> {{ m.user.firstname }} : </span> {{ m.said }}</p>
         {% endfor %}
         {% endif %}
         </div>
