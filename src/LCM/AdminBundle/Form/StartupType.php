@@ -18,6 +18,7 @@ class StartupType extends AbstractType
             ->add('name')
             ->add('season')
             ->add('pitch')
+            ->add('pitch_fr')
             ->add('website')
             ->add('status', 'choice', array('choices' => array('a' => 'Active', 'd' => 'Dead', 'e' => 'Exited')))
             ->add('socialnetworks')

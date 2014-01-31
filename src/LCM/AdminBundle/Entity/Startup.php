@@ -45,6 +45,13 @@ class Startup
     /**
      * @var string
      *
+     * @ORM\Column(name="pitch_fr", type="string", length=280)
+     */
+    private $pitch_fr;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="website", type="string", length=255)
      */
     private $website;
@@ -328,5 +335,28 @@ class Startup
     public function getFounders()
     {
         return $this->founders;
+    }
+
+    /**
+     * Set pitch_fr
+     *
+     * @param string $pitchFr
+     * @return Startup
+     */
+    public function setPitchFr($pitchFr)
+    {
+        $this->pitch_fr = $pitchFr;
+    
+        return $this;
+    }
+
+    /**
+     * Get pitch_fr
+     *
+     * @return string 
+     */
+    public function getPitchFr()
+    {
+        return $this->pitch_fr;
     }
 }
