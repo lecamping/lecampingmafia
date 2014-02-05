@@ -21,6 +21,30 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/en", name="lcm_index_en")
+     * @Template()
+     */
+    public function indexenAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery('SELECT s FROM LCMAdminBundle:Startup s ORDER BY s.season DESC, s.name');
+        $startups = $query->getResult();
+        return array('startups' => $startups);
+    }
+
+    /**
+     * @Route("/fr", name="lcm_index_fr")
+     * @Template()
+     */
+    public function indexfrAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery('SELECT s FROM LCMAdminBundle:Startup s ORDER BY s.season DESC, s.name');
+        $startups = $query->getResult();
+        return array('startups' => $startups);
+    }
+
+    /**
      * @Route("/login_check")
      * @Template()
      */

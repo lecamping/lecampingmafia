@@ -52,6 +52,13 @@ class Startup
     /**
      * @var string
      *
+     * @ORM\Column(name="pitch_en", type="string", length=280)
+     */
+    private $pitch_en;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="website", type="string", length=255)
      */
     private $website;
@@ -358,5 +365,28 @@ class Startup
     public function getPitchFr()
     {
         return $this->pitch_fr;
+    }
+
+    /**
+     * Set pitch_en
+     *
+     * @param string $pitchEn
+     * @return Startup
+     */
+    public function setPitchEn($pitchEn)
+    {
+        $this->pitch_en = $pitchEn;
+    
+        return $this;
+    }
+
+    /**
+     * Get pitch_en
+     *
+     * @return string 
+     */
+    public function getPitchEn()
+    {
+        return $this->pitch_en;
     }
 }
