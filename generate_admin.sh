@@ -1,6 +1,7 @@
 #!/bin/bash
 
 php5='/Applications/MAMP/bin/php/php5.4.10/bin/php'
+php5='/usr/bin/php'
 
 dir="src/LCM/AdminBundle/"
 

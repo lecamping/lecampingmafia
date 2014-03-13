@@ -55,7 +55,7 @@
             <td>{% if entity.expiresAt %}{{ entity.expiresAt|date('Y-m-d H:i:s') }}{% endif %}</td>
             <td>{{ entity.confirmationToken }}</td>
             <td>{% if entity.passwordRequestedAt %}{{ entity.passwordRequestedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-            <td>{% for role in entity.roles %}{{ role}} {% endfor %}</td>
+            <td>{{ entity.roles }}</td>
             <td>{{ entity.credentialsExpired }}</td>
             <td>{% if entity.credentialsExpireAt %}{{ entity.credentialsExpireAt|date('Y-m-d H:i:s') }}{% endif %}</td>
             <td>{{ entity.id }}</td>
