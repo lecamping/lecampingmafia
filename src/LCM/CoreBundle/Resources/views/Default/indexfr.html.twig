@@ -182,11 +182,11 @@
                 </td>
                 <td class="status">
                     {% if startup.status == 'a' %}
-                        <img src="{{asset('bundles/lcmcore/img/icon-active.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-active.png')}}" alt="Actif" />
                     {% elseif startup.status == 'd' %}
-                        <img src="{{asset('bundles/lcmcore/img/icon-dead.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-dead.png')}}" alt="Morte" />
                     {% elseif startup.status == 'e' %}
-                        <img src="{{asset('bundles/lcmcore/img/icon-exited.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-exited.png')}}" alt="Sortie" />
                     {% else %}
                     {% endif %}
                 </td>
@@ -199,31 +199,31 @@
                 <td class="connect">
                     {% if startup.mail|length > 0 %}
                     <a href="mailto:{{ startup.mail }}">
-                        <img src="{{asset('bundles/lcmcore/img/icon-mail.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-mail.png')}}" alt="Envoyer un mail à {{ startup.name }}" />
                     </a>
                     {% endif %}
 
                     {% if startup.facebookUrl|length > 0 %}
                     <a href="{{ startup.facebookUrl }}">
-                        <img src="{{asset('bundles/lcmcore/img/icon-facebook.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-facebook.png')}}" alt="Aller sur la page Facebook de {{ startup.name }}" />
                     </a>
                     {% endif %}
 
                     {% if startup.twitterUrl|length > 0 %}
                     <a href="{{ startup.twitterUrl }}">
-                        <img src="{{asset('bundles/lcmcore/img/icon-twitter.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-twitter.png')}}" alt="Aller sur le Twitter de {{ startup.name }}"/>
                     </a>
                     {% endif %}
 
                     {% if startup.angelistUrl|length > 0 %}
                     <a href="{{ startup.angelistUrl }}">
-                        <img src="{{asset('bundles/lcmcore/img/icon-angelist.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-angelist.png')}}" alt="Aller sur la page AngelList de {{ startup.name }}"/>
                     </a>
                     {% endif %}
 
                     {% if startup.linkedinUrl|length > 0 %}
                     <a href="{{ startup.linkedinUrl }}">
-                        <img src="{{asset('bundles/lcmcore/img/icon-linkedin.png')}}" />
+                        <img src="{{asset('bundles/lcmcore/img/icon-linkedin.png')}}" alt="Aller sur le profil LinkedIn de {{ startup.name }}"/>
                     </a>
                     {% endif %}
                 </td>
@@ -243,7 +243,7 @@
                 </a>
             </td>
             <td>
-                <img src="{{asset('bundles/lcmcore/img/logo-camping.png')}}" />
+                <img src="{{asset('bundles/lcmcore/img/logo-camping.png')}}" alt="Le Camping" />
             </td>
             <td class="small small-right">
                 &copy; Le Camping Mafia, 2014<br /><br />
