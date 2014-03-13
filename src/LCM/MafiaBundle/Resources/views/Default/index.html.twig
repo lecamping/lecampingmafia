@@ -16,11 +16,11 @@
             {% if season != startup.season %}{% set season = startup.season %}<h2>Season {{ season }}</h2>{% endif %}
             <div class="startup">
                 {% if startup.status == 'a' %}
-                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-active.png')}}" />
+                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-active.png')}}" alt="Active" />
                     {% elseif startup.status == 'd' %}
-                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-dead.png')}}" />
+                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-dead.png')}}" alt="Dead" />
                     {% elseif startup.status == 'e' %}
-                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-exited.png')}}" />
+                        <img class="status" src="{{asset('bundles/lcmcore/img/icon-exited.png')}}" alt="Exited" />
                     {% else %}
                     {% endif %}
                 <h3>{{ startup.name }}</h3>
