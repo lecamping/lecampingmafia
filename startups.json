@@ -1,0 +1,740 @@
+
+[
+  {
+    "name": "Agriconomie",
+    "website": "www.agriconomie.com",
+    "status": "active",
+    "season": "5",
+    "pitch": "Agriconomie est le premier site de vente en ligne destiné aux achats agricoles.",
+    "connect": {}
+  },
+  {
+    "name": "Artips",
+    "website": "artips.fr",
+    "status": "active",
+    "season": "5",
+    "pitch": "Artips, une dose d'art au quotidien : www.artips.fr\nRecevez chaque jour une anecdote inattendue sur une oeuvre d'art connue ou moins connue. \nUn email à lire en une minute.",
+    "connect": {
+      "mail": "colineetjean@artips.fr",
+      "facebook": "https://www.facebook.com/artipsfr",
+      "twitter": "http://twitter.com/Artips_fr"
+    }
+  },
+  {
+    "name": "BandSquare",
+    "website": "www.bandsquare.fr",
+    "status": "active",
+    "season": "5",
+    "pitch": "BandSquare est une plateforme unique dédiée aux concerts des musiciens indépendants de qualité.",
+    "connect": {
+      "mail": "contact@bandsquare.fr",
+      "facebook": "https://www.facebook.com/BandSquare.liveconcerts",
+      "twitter": "http://twitter.com/bandsquarelive"
+    }
+  },
+  {
+    "name": "Hublo",
+    "website": "www.hublo.com",
+    "status": "active",
+    "season": "5",
+    "pitch": "Engagement analytics without coding.",
+    "connect": {
+      "mail": "founders@hublo.co",
+      "facebook": "https://www.facebook.com/leo.goffic",
+      "twitter": "https://twitter.com/twyril",
+      "angelist": "http://www.angelist.co/hublo",
+      "linkedin": "http://www.linkedin.com/in/lescaon"
+    }
+  },
+  {
+    "name": "Krack",
+    "website": "krack.co",
+    "status": "active",
+    "season": "5",
+    "pitch": "hardware for skateboarders - we enhance the skateboarding experience - making them connect and compete b/w each others.",
+    "connect": {
+      "mail": "hello@krack.co",
+      "facebook": "http://facebook.com/heykrack",
+      "twitter": "http://www.twitter.com/heykrack",
+      "angelist": "http://www.angelist.co/krack"
+    }
+  },
+  {
+    "name": "LocalEyes",
+    "website": "www.localeyes-app.com",
+    "status": "active",
+    "season": "5",
+    "pitch": "LOCALEYES is a mobile app that allows anyone to earn MONEY by answering questions and taking pictures in store for brands and retailers.",
+    "connect": {
+      "mail": "support@localeyes-app.com",
+      "facebook": "https://www.facebook.com/localeyesapp",
+      "twitter": "https://twitter.com/Localeyes_app",
+      "linkedin": "http://www.linkedin.com/company/localeyes-app?trk=tabs_biz_home"
+    }
+  },
+  {
+    "name": "Qleek.me",
+    "website": "www.qleek.me",
+    "status": "active",
+    "season": "5",
+    "pitch": "Qleek allows you to share with people your digital life by putting your most beloved songs, films and photographs in the real world.",
+    "connect": {
+      "mail": "hey@qleek.me",
+      "facebook": "http://facebook.com/qleek",
+      "twitter": "http://www.twitter.com/qleekr"
+    }
+  },
+  {
+    "name": "Realytics",
+    "website": "www.realytics.io",
+    "status": "active",
+    "season": "5",
+    "pitch": "Real-time TV ads tracking for online businesses. Realytics break open the TV black box !",
+    "connect": {
+      "mail": "hello@realytics.io",
+      "facebook": "http://facebook.com/realyticsio",
+      "twitter": "http://www.twitter.com/realyticsio",
+      "linkedin": "http://www.linkedin.com/company/realytics"
+    }
+  },
+  {
+    "name": "StreamRoot",
+    "website": "www.streamroot.io",
+    "status": "active",
+    "season": "5",
+    "pitch": "StreamRoot is a smart peer-to-peer video streaming solution that drastically  reduces bandwidth costs for web video platforms, and improves the quality of service for the end users.",
+    "connect": {
+      "mail": "foudners@streamroot.io",
+      "facebook": "https://www.facebook.com/StreamRoot",
+      "twitter": "https://twitter.com/StreamRoot",
+      "linkedin": "http://www.linkedin.com/company/streamroot"
+    }
+  },
+  {
+    "name": "Takes",
+    "website": "takes.io",
+    "status": "active",
+    "season": "5",
+    "pitch": "A simple way to get feedbacks on your videos, for videomakers, agencies, and production teams.",
+    "connect": {
+      "mail": "contact@taketracker.com",
+      "facebook": "http://facebook.com/taketracker",
+      "twitter": "http://www.twitter.com/taketracker"
+    }
+  },
+  {
+    "name": "TasteHit",
+    "website": "tastehit.com",
+    "status": "active",
+    "season": "5",
+    "pitch": "TasteHit is a personalisation service for e-commerce websites",
+    "connect": {
+      "mail": "contact@tastehit.com",
+      "facebook": "http://facebook.com/tastehit",
+      "twitter": "http://www.twitter.com/TasteHit",
+      "linkedin": "http://www.linkedin.com/company/tastehit"
+    }
+  },
+  {
+    "name": "Tripndrive",
+    "website": "pndrive.com",
+    "status": "active",
+    "season": "5",
+    "pitch": "Tripndrive enables carsharing between travelers at the airport.\nOwners get a free parking.\nRenters get a car 60% cheaper than traditional car rental.",
+    "connect": {
+      "mail": "camille@tripndrive.com",
+      "facebook": "http://www.facebook.com/Tripndrive",
+      "twitter": "http://twitter.com/tripndrive",
+      "linkedin": "http://www.linkedin.com/company/tripndrive"
+    }
+  },
+  {
+    "name": "Auticiel",
+    "website": "www.auticiel.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "We develop software tools that cognitively impaired people can use in the everyday life to better communicate, to better interact and to be better integrated in the society.",
+    "connect": {
+      "mail": "contact@auticiel.com",
+      "facebook": "https://www.facebook.com/pages/Auticiel/213886215369115",
+      "twitter": "https://twitter.com/Auticiel",
+      "linkedin": "http://www.linkedin.com/company/auticiel"
+    }
+  },
+  {
+    "name": "Cours avenue",
+    "website": "www.coursavenue.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Geolocalized leisure courses (dance, music, art, etc.) search engine based on students recommendation.",
+    "connect": {
+      "mail": "contact@coursavenue.com",
+      "facebook": "https://www.facebook.com/CoursAvenue",
+      "twitter": "http://www.twitter.com/CoursAvenue"
+    }
+  },
+  {
+    "name": "Darjeelin",
+    "website": "www.darjeelin.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "The crowdsourced travel agency",
+    "connect": {
+      "mail": "hello@darjeelin.com",
+      "facebook": "http://facebook.com/darjeelin.travel",
+      "twitter": "http://www.twitter.com/_Darjeelin_",
+      "angelist": "https://angel.co/darjeelin-1"
+    }
+  },
+  {
+    "name": "Decovery",
+    "website": "www.decovery.fr",
+    "status": "active",
+    "season": "4",
+    "pitch": "Largest community of home design experts to help homeowners transform their interiors",
+    "connect": {
+      "mail": "contact@decovery.fr",
+      "facebook": "http://facebook.com/Decovery",
+      "twitter": "http://www.twitter.com/Decovery",
+      "angelist": "http://www.angelist.co/decovery",
+      "linkedin": "http://www.linkedin.com/Decovery"
+    }
+  },
+  {
+    "name": "Lingocracy",
+    "website": "www.lingocracy.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Improve your language skills by reading news",
+    "connect": {
+      "mail": "yan@lingocracy.com",
+      "facebook": "http://facebook.com/Lingocracy",
+      "twitter": "http://www.twitter.com/Lingocracy",
+      "angelist": "http://www.angelist.co/lingocracy"
+    }
+  },
+  {
+    "name": "Melusyn",
+    "website": "www.melusyn.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Film production management made fast and easy in the cloud",
+    "connect": {
+      "mail": "hello@melusyn.com",
+      "facebook": "http://facebook.com/MelusynFR",
+      "twitter": "http://www.twitter.com/melusyn",
+      "angelist": "https://angel.co/melusyn"
+    }
+  },
+  {
+    "name": "Pricing Assistant",
+    "website": "www.pricingassistant.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Pricing optimization solution for e-merchants and brands",
+    "connect": {
+      "mail": "contact@pricingassistant.com",
+      "facebook": "http://facebook.com/pricingassistant",
+      "twitter": "http://www.twitter.com/pricingassistnt",
+      "angelist": "https://angel.co/pricing-assistant",
+      "linkedin": "http://www.linkedin.com/company/pricingassistant"
+    }
+  },
+  {
+    "name": "Smiirl",
+    "website": "www.smiirl.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Smart objects to integrate social media in real life",
+    "connect": {
+      "mail": "r2d2@smiirl.com",
+      "facebook": "http://facebook.com/smiirl",
+      "twitter": "http://www.twitter.com/smiirl",
+      "angelist": "http://www.angelist.co/smiirl",
+      "linkedin": "http://www.linkedin.com/company/smiirl"
+    }
+  },
+  {
+    "name": "SOAP (ex znappit)",
+    "website": "www.soapapp.co",
+    "status": "active",
+    "season": "4",
+    "pitch": "SOAP is a mobile app that turns you life into a video story, on your own, or with your friends.",
+    "connect": {
+      "mail": "we@znapp.it",
+      "facebook": "http://facebook.com/znappit",
+      "twitter": "http://www.twitter.com/znappit",
+      "angelist": "http://www.angelist.co/znappit",
+      "linkedin": "http://www.linkedin.com/company/znappit"
+    }
+  },
+  {
+    "name": "Sportdub",
+    "website": "www.sportdub.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Live sport commentaries by sport fans, for sport fans.",
+    "connect": {
+      "facebook": "http://facebook.com/Sportdub",
+      "twitter": "http://www.twitter.com/sportdub",
+      "linkedin": "http://www.linkedin.com/sportdub"
+    }
+  },
+  {
+    "name": "Wepopp",
+    "website": "www.wepopp.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Easy planning with friends",
+    "connect": {
+      "mail": "contact@wepopp.com",
+      "facebook": "https://www.facebook.com/wepopp",
+      "twitter": "https://twitter.com/WePopp_",
+      "angelist": "https://angel.co/wepopp",
+      "linkedin": "http://www.linkedin.com/company/popp-"
+    }
+  },
+  {
+    "name": "Zéro-gâchis",
+    "website": "www.zero-gachis.com",
+    "status": "active",
+    "season": "4",
+    "pitch": "Fights against food waste by providing tools and services to the supermarkets.",
+    "connect": {
+      "mail": "contact@zero-gachis.com",
+      "facebook": "http://facebook.com/ZeroGachis",
+      "twitter": "http://www.twitter.com/ZeroGachis",
+      "angelist": "https://angel.co/z-ro-g-chis-1",
+      "linkedin": "http://www.linkedin.com/company/z-ro-g-chis"
+    }
+  },
+  {
+    "name": "Augment",
+    "website": "agmt.co",
+    "status": "active",
+    "season": "3",
+    "pitch": "Augment is a mobile app that lets you and your customers visualize your 3D models in Augmented Reality, integrated in real time in their actual size and environment. Augment is the perfect Augmented Reality app to boost your sales and bring your print to life in 3 simple steps.",
+    "connect": {
+      "mail": "contact@agmt.co",
+      "facebook": "https://www.facebook.com/pages/AugmenteDev/190277567680189?ref=hl",
+      "twitter": "https://twitter.com/AugmenteDev",
+      "angelist": "https://angel.co/augment",
+      "linkedin": "http://www.linkedin.com/company/augment"
+    }
+  },
+  {
+    "name": "Explee",
+    "website": "explee.com",
+    "status": "active",
+    "season": "3",
+    "pitch": "Create amazing animated videos and presentations, engage your audience!",
+    "connect": {
+      "mail": "contact@explee.com",
+      "facebook": "http://facebook.com/explee",
+      "twitter": "http://www.twitter.com/explee",
+      "angelist": "http://www.angelist.co/explee"
+    }
+  },
+  {
+    "name": "Fleex",
+    "website": "fleex.tv",
+    "status": "active",
+    "season": "3",
+    "pitch": "We help people get better at English watching the videos they love.",
+    "connect": {
+      "mail": "contact@fleex.tv",
+      "facebook": "https://www.facebook.com/fleextv",
+      "twitter": "https://twitter.com/fleextv",
+      "angelist": "https://angel.co/fleex"
+    }
+  },
+  {
+    "name": "Home'n'go",
+    "website": "homengo.com",
+    "status": "active",
+    "season": "3",
+    "pitch": "Home’n’go est un service entièrement gratuit qui centralise toutes les annonces immobilières des principaux sites immobiliers et vous permet, grâce à des données privées et publiques, d’obtenir des informations détaillées et pertinentes concernant la vie autour du logement qui vous intéresse.\nPrécisez vos critères en quelques clics pour faire le tri dans plusieurs millions d’annonces et utilisez votre espace privé pour gérer celles qui vous plaisent, y inviter vos amis ou votre famille pour vous faire aider dans votre recherche, accéder aux informations relatives à la zone du logement et faire le bon choix !",
+    "connect": {
+      "mail": "contact@homengo.com",
+      "facebook": "http://facebook.com/homengofan",
+      "twitter": "http://www.twitter.com/home_n_go",
+      "angelist": "http://angel.co/home-n-go",
+      "linkedin": "http://fr.linkedin.com/company/home'n'go"
+    }
+  },
+  {
+    "name": "Jellynote",
+    "website": "www.jellynote.com/",
+    "status": "active",
+    "season": "3",
+    "pitch": "♬ Everything you need pour play music ♪ A Guitar Hero with real music & real instruments ♬",
+    "connect": {
+      "mail": "support@jellynote.com",
+      "facebook": "https://www.facebook.com/JellyNote",
+      "twitter": "https://twitter.com/jellynote",
+      "angelist": "http://www.angelist.co/jellynote",
+      "linkedin": "http://www.linkedin.com/company/jellynote‎"
+    }
+  },
+  {
+    "name": "Lima (ex ForgetBox)",
+    "website": "meetlima.com/",
+    "status": "active",
+    "season": "3",
+    "pitch": "Lima is the first product to unify the memory of all your devices. It manages your files instead of Windows, Mac OS or your mobile OS, so all your devices display the same content at all times. \n\nNow, all your PC files are also in your smartphone. Every file you save is saved on all your devices. Re-organize one of your devices, it reorganizes all of them.",
+    "connect": {
+      "mail": "team@meetlima.com",
+      "facebook": "https://www.facebook.com/MeetLima",
+      "twitter": "http://www.twitter.com/MeetLima",
+      "angelist": "https://angel.co/lima-1",
+      "linkedin": "http://www.linkedin.com/company/3544137?trk=tyah&trkInfo=tas%3Aforgetbox%2Cidx%3A1-1-1"
+    }
+  },
+  {
+    "name": "Poutsh",
+    "website": "poutsch.com",
+    "status": "active",
+    "season": "3",
+    "pitch": "Collect, express and make sense of opinions.",
+    "connect": {
+      "mail": "melchior@poutsch.com",
+      "facebook": "http://facebook.com/poutsch",
+      "twitter": "http://www.twitter.com/poutsch",
+      "angelist": "http://www.angelist.co/poutsch",
+      "linkedin": "http://www.linkedin.com/poutsch"
+    }
+  },
+  {
+    "name": "Sketchfab",
+    "website": "sketchfab.com",
+    "status": "active",
+    "season": "3",
+    "pitch": "Sketchfab is the web platform to publish your interactive 3D models.",
+    "connect": {
+      "facebook": "http://facebook.com/sketchfab",
+      "twitter": "http://www.twitter.com/sketchfab",
+      "angelist": "http://www.angelist.co/skethcfab",
+      "linkedin": "http://www.linkedin.com/company/sketchfab"
+    }
+  },
+  {
+    "name": "Stormz",
+    "website": "stormz.me",
+    "status": "active",
+    "season": "3",
+    "pitch": "Meetings are boring and ineffective! \n\nWe design solutions that change the way we work together. Use Stormz (http://stormz.me) to facilitate awesome collaborative workshops and get Deezco (http://deez.co) to gather advices and take decisions that will grow your business.",
+    "connect": {
+      "mail": "contact@stormz.me",
+      "facebook": "http://facebook.com/stormz.me",
+      "twitter": "http://www.twitter.com/stormzplatform",
+      "angelist": "https://angel.co/stormz",
+      "linkedin": "http://www.linkedin.com/company/stormz"
+    }
+  },
+  {
+    "name": "Veezio",
+    "website": "veezio.com",
+    "status": "dead",
+    "season": "3",
+    "pitch": "Veezio is a fully automatic video analysis, optimization and indexing platform.",
+    "connect": {
+      "mail": "contact@veezio.com",
+      "twitter": "http://www.twitter.com/veezio",
+      "angelist": "https://angel.co/veezio"
+    }
+  },
+  {
+    "name": "Webshell",
+    "website": "oauth.io/",
+    "status": "active",
+    "season": "3",
+    "pitch": "Webshell enables web and mobile developers to make application faster by saving 80% of time for using APIs. Webshell is the team behind OAuth.io.",
+    "connect": {
+      "mail": "contact@webshell.io",
+      "twitter": "http://twitter.com/OAuth_io",
+      "angelist": "http://angel.co/webshell"
+    }
+  },
+  {
+    "name": "Whale Street",
+    "website": "",
+    "status": "active",
+    "season": "3",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "HereWeDate",
+    "website": "",
+    "status": "dead",
+    "season": "2",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "Infinit",
+    "website": "www.infinit.io",
+    "status": "active",
+    "season": "2",
+    "pitch": "A fast, elegant and unlimited file transfer application for creative people.",
+    "connect": {
+      "mail": "contact@infinit.io",
+      "facebook": "https://www.facebook.com/infinitdotio",
+      "twitter": "https://twitter.com/infinitdotio",
+      "angelist": "https://angel.co/infinit",
+      "linkedin": "http://www.linkedin.com/company/2393438"
+    }
+  },
+  {
+    "name": "LoungeUp",
+    "website": "www.loungeup.com/",
+    "status": "active",
+    "season": "2",
+    "pitch": "Mobile Guest Relationship Management Platform for the hospitality industry",
+    "connect": {
+      "mail": "contact@loungeup.com",
+      "facebook": "http://facebook.com/loungeup",
+      "twitter": "http://www.twitter.com/loungeup",
+      "angelist": "http://www.angelist.co/loungeup",
+      "linkedin": "http://www.linkedin.com/company/loungeup"
+    }
+  },
+  {
+    "name": "Oleapark",
+    "website": "",
+    "status": "dead",
+    "season": "2",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "Onefeat",
+    "website": "",
+    "status": "dead",
+    "season": "2",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "Pictarine",
+    "website": "www.pictarine.com",
+    "status": "active",
+    "season": "2",
+    "pitch": "Pictarine aggregates your photos from your social networks",
+    "connect": {
+      "mail": "contact@pictarine.com",
+      "facebook": "http://facebook.com/pictarine",
+      "twitter": "http://www.twitter.com/pictarine",
+      "angelist": "http://www.angelist.co/pictarine",
+      "linkedin": "http://www.linkedin.com/pictarine"
+    }
+  },
+  {
+    "name": "Pili Pop",
+    "website": "www.pilipop.com",
+    "status": "active",
+    "season": "2",
+    "pitch": "We create stimulating and engaging apps for youngsters to help them find the fun in learning languages.",
+    "connect": {
+      "mail": "hello@pilipop.com",
+      "facebook": "http://facebook.com/pilipoplabs",
+      "twitter": "http://www.twitter.com/pilipoplabs",
+      "angelist": "http://www.angelist.co/pili-pop"
+    }
+  },
+  {
+    "name": "qunb",
+    "website": "qunb.com",
+    "status": "active",
+    "season": "2",
+    "pitch": "qunb helps anyone turn their most valuable data into compelling / visual / actionable stories.",
+    "connect": {
+      "mail": "hello@qunb.com",
+      "facebook": "http://facebook.com/qunb",
+      "twitter": "http://www.twitter.com/qunb",
+      "angelist": "http://www.angelist.co/qunb",
+      "linkedin": "http://www.linkedin.com/qunb"
+    }
+  },
+  {
+    "name": "Siz - by Viewrz",
+    "website": "siz.io",
+    "status": "active",
+    "season": "2",
+    "pitch": "Siz.io. Social bookmarking for videos. Sponsored content campaigns for brands.",
+    "connect": {
+      "mail": "contact@siz.io",
+      "facebook": "http://facebook.com/siz.io",
+      "twitter": "http://www.twitter.com/siz_io",
+      "angelist": "https://angel.co/viewrz",
+      "linkedin": "http://www.linkedin.com/company/viewrz"
+    }
+  },
+  {
+    "name": "Skimm!",
+    "website": "",
+    "status": "dead",
+    "season": "2",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "TVShow Time (Toze Labs SAS)",
+    "website": "www.tvshowtime.com",
+    "status": "active",
+    "season": "2",
+    "pitch": "TVShow Time lets you track, comment and watch your TV shows.",
+    "connect": {
+      "mail": "founders@tvshowtime.com",
+      "facebook": "www.facebook.com/tvshowtime",
+      "twitter": "www.twitter.com/tvshowtime"
+    }
+  },
+  {
+    "name": "WeCook",
+    "website": "www.wecook.fr",
+    "status": "active",
+    "season": "2",
+    "pitch": "WeCook help you to plan your family week of meals and grocery list with highly personalized recommendation",
+    "connect": {
+      "mail": "contact@wecook.fr",
+      "facebook": "https://www.facebook.com/wecook.fr",
+      "twitter": "http://www.twitter.com/wecook_fr"
+    }
+  },
+  {
+    "name": "Bankin'",
+    "website": "www.bankin.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "La meilleure App pour gérer ses finances.",
+    "connect": {
+      "facebook": "https://www.facebook.com/ilovebankin",
+      "twitter": "https://twitter.com/bankin"
+    }
+  },
+  {
+    "name": "Beansight",
+    "website": "www.beansight.com",
+    "status": "dead",
+    "season": "1",
+    "pitch": "A social network dedicated to predictions. Users can prove their expertise in dedicated fields thanks to their accuracy in forecast.",
+    "connect": {
+      "facebook": "https://www.facebook.com/Beansight",
+      "twitter": "https://twitter.com/beansight",
+      "angelist": "https://angel.co/beansight"
+    }
+  },
+  {
+    "name": "Dabla",
+    "website": "www.dabla.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "Dabla keeps you connected with your friends & family. Cross-device apps as easy to use as SMS and especially made for groups.",
+    "connect": {
+      "mail": "pad@dabla.com",
+      "facebook": "https://www.facebook.com/pages/dabla/216622138361691",
+      "twitter": "https://twitter.com/godabla"
+    }
+  },
+  {
+    "name": "docTrackr",
+    "website": "doctrackr.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "docTrackr helps businesses keep their documents safe and under control, wherever they're stored, whomever they're shared with.",
+    "connect": {
+      "mail": "contact@doctrackr.com",
+      "facebook": "https://www.facebook.com/doctrackrapp",
+      "twitter": "http://twitter.com/docTrackr",
+      "linkedin": "http://www.linkedin.com/company/1802229"
+    }
+  },
+  {
+    "name": "Itipic",
+    "website": "",
+    "status": "dead",
+    "season": "1",
+    "pitch": "x",
+    "connect": {}
+  },
+  {
+    "name": "Kawet",
+    "website": "madebykawet.com",
+    "status": "exited",
+    "season": "1",
+    "pitch": "All-in-one solution to create & manage native apps for your enterprise.",
+    "connect": {
+      "mail": "hello@madebykawet.com",
+      "facebook": "http://facebook.com/madebykawet",
+      "twitter": "http://www.twitter.com/madebykawet",
+      "angelist": "http://angel.co/kawet",
+      "linkedin": "http://www.linkedin.com/companies/kawet"
+    }
+  },
+  {
+    "name": "Mesagraph",
+    "website": "www.mesagraph.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "Mesagraph unlocks the value contained in online conversations.",
+    "connect": {
+      "facebook": "http://www.facebook.com/Mesagraph",
+      "twitter": "http://www.twitter.com/Mesagraph"
+    }
+  },
+  {
+    "name": "P1Security",
+    "website": "www.p1sec.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "Security for Mobile, Telecom and Core Networks.",
+    "connect": {}
+  },
+  {
+    "name": "PrepMyFuture // Everlearn",
+    "website": "www.everlearn-technology.com/",
+    "status": "active",
+    "season": "1",
+    "pitch": "adaptive learning technology",
+    "connect": {
+      "mail": "contact@prepmyfuture.com",
+      "facebook": "http://facebook.com/prepmyfuture",
+      "twitter": "http://www.twitter.com/prepmyfuture",
+      "angelist": "http://www.angelist.co/prepmyfuture"
+    }
+  },
+  {
+    "name": "Skerou",
+    "website": "skerou.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "Je suis une appli mobile gratuite pour préparer vos courses et bénéficier de promotions exclusives, grâce à l'analyse de votre ticket de caisse de supermarché.",
+    "connect": {
+      "mail": "contact@skerou.com",
+      "facebook": "http://facebook.com/skerou",
+      "twitter": "http://www.twitter.com/skerou",
+      "angelist": "http://www.angelist.co/purchease",
+      "linkedin": "http://www.linkedin.com/skerou"
+    }
+  },
+  {
+    "name": "Studyka",
+    "website": "www.studyka.com",
+    "status": "active",
+    "season": "1",
+    "pitch": "Studyka organizes student challenges across the globe to connect student teams with companies and identify the leaders of tomorrow!",
+    "connect": {
+      "facebook": "http://www.facebook.com/studyka",
+      "twitter": "https://twitter.com/studyka"
+    }
+  },
+  {
+    "name": "Zifiz",
+    "website": "",
+    "status": "dead",
+    "season": "1",
+    "pitch": "x",
+    "connect": {}
+  }
+]
