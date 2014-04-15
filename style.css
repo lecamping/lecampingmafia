@@ -1,0 +1,137 @@
+
+    body {
+        background-color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    h1 img {
+        position: relative;
+        bottom: -20px;
+        margin-right: 20px;
+    }
+
+    table.startups {
+        display: block;
+        width: 94%;
+        margin: 0px auto 40px auto;
+    }
+
+    table.startups th {
+        text-align: left;
+        padding: 5px 10px 10px 10px;
+    }
+
+    table.startups td {
+        padding: 10px 10px 0px 10px;
+    }
+
+    /*  TAKU STYLE */
+    table.startups .favicon {
+        vertical-align: middle
+    }
+
+    table.startups .favicon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    table.startups .website a {
+        text-decoration: none;
+        color: #888;
+        font-style: italic;
+    }
+
+    table.startups .status {
+        text-align: center;
+    }
+
+    table.startups .status img {
+        width: 20px;
+    }
+
+    table.startups .season {
+        text-align: center
+    }
+
+    table.startups .season span {
+        background: url(img/icon-border.png) no-repeat;
+        background-size: cover;
+        height: 20px;
+        line-height: 19px;
+        width: 20px;
+        color: #888;
+        display: inline-block;
+        font-size: 12px;
+        position:relative;
+        top: -1px;
+    }
+
+    table.startups .connect {
+        width: 155px;
+    }
+
+    table.startups .connect img {
+        width: 20px;
+        border: 0px;
+    }
+
+    table.startups .connect a {
+        text-decoration: none;
+        color: #888;
+        margin-right: 10px
+    }
+
+    table.startups .pitch {
+        font-size: 12px;
+    }
+
+    .footer {
+        background: #ccc;
+    }
+
+    .footer {
+        background: #ccc;
+        display: block;
+        width: 100%;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .footer table {
+        display: block;
+        width: 94%;
+        margin: auto;
+    }
+
+    .footer td {
+        text-align: center;
+    }
+
+    .footer td.small-left {
+        text-align: left;
+    }
+
+    .footer td.small-right {
+        text-align: right;
+    }
+
+    .footer td.small {
+        width: 25%;
+    }
+
+    .footer td img {
+        width: 300px;
+    }
+
+    .footer td.small-left a {
+        color: #ddd;
+    }
