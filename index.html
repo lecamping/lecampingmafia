@@ -26,6 +26,17 @@
             Le Camping Mafia
         </h1>
 
+<div class="filters">
+  <select ng-model="statusFilter">
+    <option value="" selected>All</option>
+    <option value="active">Active</option>
+    <option value="exited">Exited</option>
+    <option value="dead">Dead</option>
+  </select>
+  
+  <input ng-model="searchText" placeholder="search">
+</div>
+
         <table class="startups" ng-controller="StartupCtrl">
         
           <tr>
@@ -37,7 +48,7 @@
               <th class="center">pitch</th>
               <th class="center">connect</th>
           </tr>
-          <tr ng-repeat="startup in startups">
+          <tr ng-repeat="startup in startups | filter:searchText | filter:{status:statusFilter}">
             <td class="favicon">
               <img src="http://g.etfv.co/http://{{startup.website}}?defaulticon=1pxgif" />
             </td>

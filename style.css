@@ -135,3 +135,7 @@
     .footer td a {
         color: #ddd;
     }
+    
+    .filters {
+      text-align: center;
+    }
