@@ -45,7 +45,7 @@
               {{startup.name}}
             </td>
             <td class="website" >
-              <a href="{{startup.website}}">
+              <a href="http://{{startup.website}}">
                 {{startup.website}}
               </a>
             </td>
@@ -57,7 +57,7 @@
             </td>
             <td class="pitch" ng-bind-html="startup.pitch | linky"></td>
             <td class="connect">
-              <a href="{{value}}" ng-repeat="(key, value) in startup.connect">
+              <a href="{{value | mailto}}" ng-repeat="(key, value) in startup.connect">
                 <img src="img/icon-{{key}}.png" />
               </a>
             </td>
