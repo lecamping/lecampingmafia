@@ -363,7 +363,7 @@
   },
   {
     "name": "Jellynote",
-    "website": "www.jellynote.com/",
+    "website": "www.jellynote.com",
     "status": "active",
     "season": "3",
     "pitch": "♬ Everything you need pour play music ♪ A Guitar Hero with real music & real instruments ♬",
@@ -377,7 +377,7 @@
   },
   {
     "name": "Lima (ex ForgetBox)",
-    "website": "meetlima.com/",
+    "website": "meetlima.com",
     "status": "active",
     "season": "3",
     "pitch": "Lima is the first product to unify the memory of all your devices. It manages your files instead of Windows, Mac OS or your mobile OS, so all your devices display the same content at all times. \n\nNow, all your PC files are also in your smartphone. Every file you save is saved on all your devices. Re-organize one of your devices, it reorganizes all of them.",
@@ -444,7 +444,7 @@
   },
   {
     "name": "Webshell",
-    "website": "oauth.io/",
+    "website": "oauth.io",
     "status": "active",
     "season": "3",
     "pitch": "Webshell enables web and mobile developers to make application faster by saving 80% of time for using APIs. Webshell is the team behind OAuth.io.",
@@ -486,7 +486,7 @@
   },
   {
     "name": "LoungeUp",
-    "website": "www.loungeup.com/",
+    "website": "www.loungeup.com",
     "status": "active",
     "season": "2",
     "pitch": "Mobile Guest Relationship Management Platform for the hospitality industry",
@@ -695,7 +695,7 @@
   },
   {
     "name": "PrepMyFuture // Everlearn",
-    "website": "www.everlearn-technology.com/",
+    "website": "www.everlearn-technology.com",
     "status": "active",
     "season": "1",
     "pitch": "adaptive learning technology",
