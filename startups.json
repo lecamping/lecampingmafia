@@ -1,4 +1,3 @@
-
 [
   {
     "name": "Agriconomie",
@@ -675,7 +674,7 @@
   {
     "name": "Mesagraph",
     "website": "www.mesagraph.com",
-    "status": "active",
+    "status": "exited",
     "season": "1",
     "pitch": "Mesagraph unlocks the value contained in online conversations.",
     "connect": {
