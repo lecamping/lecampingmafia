@@ -500,11 +500,14 @@
   },
   {
     "name": "Oleapark",
-    "website": "",
+    "website": "oleapark.com",
     "status": "dead",
     "season": "2",
-    "pitch": "",
-    "connect": {}
+    "pitch": "Your social event badge. Offer the best mobile networking experience to your attendees.",
+    "connect": {
+      "twitter": "https://twitter.com/oleapark",
+      "facebook": "https://www.facebook.com/oleapark"
+    }
   },
   {
     "name": "Onefeat",
