@@ -27,14 +27,23 @@
         </h1>
 
 <div class="filters">
+  <select ng-model="seasonFilter">
+    <option value="" selected>All seasons</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
   <select ng-model="statusFilter">
-    <option value="" selected>All</option>
+    <option value="" selected>Any status</option>
     <option value="active">Active</option>
     <option value="exited">Exited</option>
     <option value="dead">Dead</option>
   </select>
   
-  <input ng-model="searchText" placeholder="search">
+  <input ng-model="searchText" placeholder="Search">
 </div>
 
         <table class="startups" ng-controller="StartupCtrl">
@@ -48,7 +57,7 @@
               <th class="center">pitch</th>
               <th class="center">connect</th>
           </tr>
-          <tr ng-repeat="startup in startups | filter:searchText | filter:{status:statusFilter}">
+          <tr ng-repeat="startup in startups | filter:searchText | filter:{status:statusFilter} | filter:{season:seasonFilter}">
             <td class="favicon">
               <img src="http://g.etfv.co/http://{{startup.website}}?defaulticon=1pxgif" />
             </td>
