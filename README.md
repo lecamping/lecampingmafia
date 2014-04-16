@@ -1,7 +1,7 @@
 LeCamping Mafia
 ===============
 
-A list of all startups from LeCamping.
+A list of all startups from [LeCamping](http://accelerate.numaparis.com/), the 1st startup accelerator in France.
 
 How to add content
 ------------------
