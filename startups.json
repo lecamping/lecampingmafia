@@ -459,7 +459,7 @@
     "website": "",
     "status": "active",
     "season": "3",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -467,7 +467,7 @@
     "website": "",
     "status": "dead",
     "season": "2",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -503,7 +503,7 @@
     "website": "",
     "status": "dead",
     "season": "2",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -511,7 +511,7 @@
     "website": "",
     "status": "dead",
     "season": "2",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -574,7 +574,7 @@
     "website": "",
     "status": "dead",
     "season": "2",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -654,7 +654,7 @@
     "website": "",
     "status": "dead",
     "season": "1",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   },
   {
@@ -733,7 +733,7 @@
     "website": "",
     "status": "dead",
     "season": "1",
-    "pitch": "x",
+    "pitch": "",
     "connect": {}
   }
 ]
