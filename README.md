@@ -8,6 +8,8 @@ How to add content
 
 Startups data is stored into the [`startup.json`](https://github.com/lecamping/lecampingmafia/blob/gh-pages/startups.json) file. You can simply [edit it from the GitHub website](https://github.com/lecamping/lecampingmafia/edit/gh-pages/startups.json), you will only need a GitHub account. If you are not part of the Mafia (the editorial team), then you will create a GitHub Pull Request and someone from the Mafia will need to merge it. Be careful to write valid JSON.
 
+Note: you should add your favicon at your.website.com/favicon.ico so that it is automatically added on your startup profile.
+
 How to improve the website
 --------------------------
 
