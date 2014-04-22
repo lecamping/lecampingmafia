@@ -20,4 +20,4 @@ mafiapp.filter('mailto', function() {
       }
       return text;        
     };
-	});
+});
