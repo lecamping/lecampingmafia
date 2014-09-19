@@ -1,4 +1,16 @@
 [
+    {
+    "name": "SharePay",
+    "website": "http://sharepayers.com",
+    "status": "active",
+    "season": "6",
+    "pitch": "Pay together, in real-time",
+    "connect": {
+      "mail": "contact@sharepay.fr",
+      "facebook": "https://www.facebook.com/SharePay",
+      "twitter": "http://twitter.com/sharepayers"
+    }
+  },
   {
     "name": "Drust",
     "website": "drust.io",
