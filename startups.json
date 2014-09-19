@@ -1,5 +1,17 @@
 [
   {
+    "name": "Drust",
+    "website": "drust.io",
+    "status": "active",
+    "season": "6",
+    "pitch": "Drust est l'objet connecté qui vous permet de communiquer avec votre voiture pour comprendre l'origine des pannes et vous redirige vers un garagiste de confiance.",
+    "connect": {
+      "mail": "contact@drust.io",
+      "facebook": "https://www.facebook.com/meetdrust",
+      "twitter": "http://twitter.com/meetdrust"
+    }
+  },
+  {
     "name": "Agriconomie",
     "website": "www.agriconomie.com",
     "status": "active",
