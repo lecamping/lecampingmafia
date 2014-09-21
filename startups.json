@@ -1,5 +1,17 @@
 [
     {
+    "name": "Sharette",
+    "website": "sharette.fr",
+    "status": "active",
+    "season": "6",
+    "pitch": "Sharette is a market place dedicated to mobility in urban areas, combining short-distance carpooling with the existing network of public transports.",
+    "connect": {
+      "mail": "contact@sharette.fr",
+      "facebook": "https://www.facebook.com/sharette.fr",
+      "twitter": "http://twitter.com/sharettefr"
+    }
+  },
+  {
     "name": "SharePay",
     "website": "sharepayers.com",
     "status": "active",
