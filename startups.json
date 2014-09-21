@@ -1,5 +1,16 @@
 [
     {
+    "name": "Pulpix",
+    "website": "www.pulpix.co",
+    "status": "active",
+    "season": "6",
+    "pitch": "The bonus layer for online videos",
+    "connect": {
+      "mail": "hello@pulpix.co",
+      "twitter": "http://twitter.com/pulpix"
+    }
+  },
+    {
     "name": "SharePay",
     "website": "sharepayers.com",
     "status": "active",
