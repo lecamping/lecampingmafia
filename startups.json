@@ -1,5 +1,18 @@
 [
     {
+        "name": "Kokot'",
+        "website": "www.mykokot.com",
+        "status": "active",
+        "season": "6",
+        "pitch": "Kokot' offers professionals a simple and innovative solution to manage your expense reports. No more stress of lost tickets, procrastination of reports and back and forth with the accountant.",
+        "connect": {
+          "mail": "contact@mykokot.com",
+          "facebook": "https://www.facebook.com/pages/Kokot/624711224276699",
+          "twitter": "https://twitter.com/@mykokot",
+          "linkedin": "https://www.linkedin.com/company/5307214?trk=tyah&trkInfo=tarId%3A1411483981315%2Ctas%3Akokot%2Cidx%3A2-2-7"
+        }
+    },
+    {
         "name": "Sharette",
         "website": "sharette.fr",
         "status": "active",
