@@ -1,5 +1,16 @@
 [
     {
+      "name": "Nunki",
+      "website": "www.nunki.co",
+      "status": "active",
+      "season": "6",
+      "pitch": "Live information, real emotions",
+      "connect": {
+        "mail": "hello@nunki.co",
+        "twitter": "https://twitter.com/NunkiApp"
+      }
+    },
+    {
     "name": "Pulpix",
     "website": "www.pulpix.co",
     "status": "active",
