@@ -1,5 +1,18 @@
 [
     {
+        "name": "Smyle",
+        "website": "www.smyle.io",
+        "status": "active",
+        "season": "6",
+        "pitch": "Easy peasy: collect, compare and buy fashion articles !",
+        "connect": {
+          "mail": "contact@smyle.io",
+          "facebook": "https://www.facebook.com/Smyle.io",
+          "twitter": "https://twitter.com/@smyleio",
+          "linkedin": "https://www.linkedin.com/company/smyle-io"
+        }
+    },
+    {
         "name": "Jam",
         "website": "www.justjam.at",
         "status": "active",
