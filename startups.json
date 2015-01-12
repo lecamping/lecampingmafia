@@ -1,5 +1,18 @@
 [
     {
+      "name": "Soundsgood",
+      "website": "soundsgood.co",
+      "status": "active",
+      "season": "6",
+      "pitch": "Beautiful playlists curated with passion by top influencers !",
+      "connect": {
+        "mail": "contact@soundsgood.co",
+        "facebook": "https://www.facebook.com/sndsgoood",
+        "twitter": "https://twitter.com/sndsgoood",
+        "linkedin": "https://www.linkedin.com/company/3330094"
+      }
+    },    
+    {
         "name": "Smyle",
         "website": "www.smyle.io",
         "status": "active",
