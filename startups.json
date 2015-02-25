@@ -1,5 +1,18 @@
 [
     {
+      "name": "UniqueSound",
+      "website": "uniquesound.com",
+      "status": "active",
+      "season": "6",
+      "pitch": "Videos will never sound the same",
+      "connect": {
+        "mail": "hello@uniquesound.com",
+        "facebook": "https://www.facebook.com/uniquesoundoff",
+        "twitter": "https://twitter.com/UniqueSoundOff",
+        "linkedin": "https://www.linkedin.com/company/uniquesound"
+      }
+    },
+    {
       "name": "Soundsgood",
       "website": "soundsgood.co",
       "status": "active",
