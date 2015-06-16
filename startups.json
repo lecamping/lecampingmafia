@@ -1,5 +1,17 @@
 [
     {
+      "name": "Kwalito",
+      "website": "kwali.to",
+      "status": "active",
+      "season": "7",
+      "pitch": "The mobile app that checks in 2 seconds the composition of food products according to your requirements",
+      "connect": {
+        "mail": "welcome@kwali.to",
+        "facebook": "https://www.facebook.com/kwalitoapp",
+        "twitter": "https://twitter.com/kwalitoApp"
+      }
+    },
+    {
       "name": "UniqueSound",
       "website": "uniquesound.com",
       "status": "active",
