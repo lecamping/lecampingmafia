@@ -1,5 +1,16 @@
 [
     {
+      "name": "Les Petites Tables",
+      "website": "www.lespetitestables.com",
+      "status": "active",
+      "season": "7",
+      "pitch": "Les Petites Tables makes it painlessly easy to find quality, delicious, places to eat across Europe. In less than a minute, for less than 10 euro.",
+      "connect": {
+        "mail": "team@lespetitestables.com",
+        "facebook": "https://www.facebook.com/pages/Les-Petites-Tables/1409069196023392"
+      }
+    },
+    {
       "name": "Gorgias",
       "website": "gorgias.io",
       "status": "active",
@@ -48,7 +59,7 @@
         "twitter": "https://twitter.com/sndsgoood",
         "linkedin": "https://www.linkedin.com/company/3330094"
       }
-    },    
+    },
     {
         "name": "Smyle",
         "website": "www.smyle.io",
