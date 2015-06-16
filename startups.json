@@ -1,5 +1,17 @@
 [
     {
+      "name": "Gorgias",
+      "website": "gorgias.io",
+      "status": "active",
+      "season": "7",
+      "pitch": "Gorgias automatically suggests what to reply to a repetitive email",
+      "connect": {
+        "mail": "hello@gorgias.io",
+        "facebook": "https://www.facebook.com/pages/Gorgias/326831910853669",
+        "twitter": "https://twitter.com/gorgiasio"
+      }
+    },
+    {
       "name": "Kwalito",
       "website": "kwali.to",
       "status": "active",
