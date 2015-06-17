@@ -12,6 +12,19 @@
       }
     },
     {
+      "name": "Corilla",
+      "website": "corilla.co",
+      "status": "active",
+      "season": "7",
+      "pitch": "Beautiful publishing tools for technical writers from draft to device.",
+      "connect": {
+        "mail": "team@corilla.co",
+        "facebook": "https://www.facebook.com/teamcorilla",
+        "twitter": "https://twitter.com/teamcorilla",
+        "linkedin": "https://www.linkedin.com/company/3963981"
+      }
+    },
+    {
       "name": "Les Petites Tables",
       "website": "www.lespetitestables.com",
       "status": "active",
