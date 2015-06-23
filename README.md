@@ -15,4 +15,4 @@ How to improve the website
 
 The website is a simple client-side [AngularJS](http://angularjs.org/) web application. You just need a browser to run it. It is build on a very small Modele View Controller architecture.
 
-Kepp It Simple Stupid please.
+Kepp It Simple and Stupid please.
