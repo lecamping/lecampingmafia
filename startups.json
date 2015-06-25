@@ -1,5 +1,17 @@
 [
     {
+      "name": "Le Zeste",
+      "website": "lezeste.paris",
+      "status": "active",
+      "season": "7",
+      "pitch": "Enjoy every meal : order delicious meals cooked by our chef, get delivered in less than 20 minutes.",
+      "connect": {
+        "mail": "hello@lezeste.paris",
+        "facebook": "https://www.facebook.com/lezeste.paris",
+        "twitter": "https://twitter.com/lezeste_paris"
+      }
+    },
+    {
       "name": "Budeal",
       "website": "www.budeal.com",
       "status": "active",
