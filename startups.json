@@ -1,5 +1,18 @@
 [
     {
+      "name": "Popup Immo",
+      "website": "www.popupimmo.com",
+      "status": "active",
+      "season": "7",
+      "pitch": "PopUp Immo is the airbnb of retail space: find and book a commercial space as easily as a hotel room!",
+      "connect": {
+        "mail": "contact@popupimmo.com",
+        "facebook": "https://www.facebook.com/PopupImmo",
+        "twitter": "https://twitter.com/popupimmo"
+        "linkedin": "https://www.linkedin.com/company/popup-immo"
+      }
+    },
+    {
       "name": "Le Zeste",
       "website": "lezeste.paris",
       "status": "active",
