@@ -1,5 +1,18 @@
 [
     {
+      "name": "FoodMeUp",
+      "website": "www.foodmeup.net",
+      "status": "active",
+      "season": "7",
+      "pitch": "FoodMeUp is the first SaaS dedicated to recipe management. It allows professionals of the food industry to organize their recipes (collaborative work, versioning, tree structure), manage their production (merge recipes, retrieve all ingredients, manage stocks and send orders, print multiple technical sheets) and access analytics (costs,profitability, etc.)",
+      "connect": {
+        "mail": "sebastien.vassaux@foodmeup.net",
+        "facebook": "https://www.facebook.com/foodmeup.net",
+        "twitter": "https://twitter.com/foodmeup",
+        "linkedin": "https://www.linkedin.com/company/foodmeup"
+        }
+    },
+    {
       "name": "Le Zeste",
       "website": "lezeste.paris",
       "status": "active",
