@@ -25,6 +25,18 @@
       }
     },
     {
+      "name": "Pandascore",
+      "website": "pandascore.co",
+      "status": "active",
+      "season": "7",
+      "pitch": "Esport is getting big ! Beat your competitors with our statistics and analysts knowledge !",
+      "connect": {
+        "mail": "flav@pandascore.co",
+        "facebook": "https://www.facebook.com/pandascore",
+        "twitter": "https://twitter.com/panda_score"
+      }
+    },
+    {
       "name": "Le Zeste",
       "website": "lezeste.paris",
       "status": "active",
