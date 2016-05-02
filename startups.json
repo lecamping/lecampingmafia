@@ -62,14 +62,14 @@
     },
     {
       "name": "Corilla",
-      "website": "corilla.co",
+      "website": "corilla.com",
       "status": "active",
       "season": "7",
-      "pitch": "Beautiful publishing tools for technical writers from draft to device.",
+      "pitch": "Corilla is a collaborative authoring and publishing tool for technical writers.",
       "connect": {
-        "mail": "team@corilla.co",
+        "mail": "hello@corilla.com",
         "facebook": "https://www.facebook.com/teamcorilla",
-        "twitter": "https://twitter.com/teamcorilla",
+        "twitter": "https://twitter.com/corilla",
         "linkedin": "https://www.linkedin.com/company/3963981"
       }
     },
