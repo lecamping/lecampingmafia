@@ -1,14 +1,14 @@
 [
     {
-      "name": "Sentimy",
-      "website": "sentimy.com",
+      "name": "Supermood",
+      "website": "supermood.fr",
       "status": "active",
       "season": "7",
-      "pitch": "Giving your employees a way to speak up while improving your company's culture!",
+      "pitch": "Supermood est la première plateforme d'engagement en entreprise. Transformez l'expérience de vos collaborateurs et prenez les meilleures décisions RH !",
       "connect": {
-        "mail": "us@sentimy.com",
-        "facebook": "https://www.facebook.com/SentimyOfficial",
-        "twitter": "https://twitter.com/SentimyOfficial"
+        "mail": "hello@supermood.fr",
+        "facebook": "https://www.facebook.com/SupermoodTeam",
+        "twitter": "https://twitter.com/SupermoodTeam"
       }
     },
     {
